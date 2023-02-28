@@ -1,0 +1,10 @@
+/**
+* @desc         heading styles.
+* @requires     variables,
+*/
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=_section.css.map */

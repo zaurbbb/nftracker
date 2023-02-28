@@ -1,0 +1,81 @@
+/**
+* @desc         adds default text styles
+* @requires     variables.scss
+*/
+
+@font-face {
+    font-family: "NeueMachinaBlack";
+    src: local("NeueMachinaBlack"), url("../../assets/fonts/NeueMachina-Black.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NeueMachinaBold";
+    src: local("NeueMachinaBold"), url("../../assets/fonts/NeueMachina-Bold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NeueMachinaLight";
+    src: local("NeueMachinaLight"), url("../../assets/fonts/NeueMachina-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NeueMachinaMedium";
+    src: local("NeueMachinaMedium"), url("../../assets/fonts/NeueMachina-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NeueMachinaRegular";
+    src: local("NeueMachinaRegular"), url("../../assets/fonts/NeueMachina-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NeueMachinaUltrabold";
+    src: local("NeueMachinaUltrabold"), url("../../assets/fonts/NeueMachina-Ultrabold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NeueMachinaUltralight";
+    src: local("NeueMachinaUltralight"), url("../../assets/fonts/NeueMachina-Ultralight.ttf") format("truetype");
+    font-weight: normal;
+}
+
+
+body {
+    line-height: $base-line-height;
+    color: $text-primary-color;
+}
+
+body,
+input,
+select,
+textarea {
+    font-family: $font-family-regular;
+}
+
+// headings and paragraph
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+}
+
+h1 {
+    font-size: auto;
+}
+
+h2 {
+    font-size: auto;
+}
+
+pre,
+code {
+    font-family: $font-family-code;
+}

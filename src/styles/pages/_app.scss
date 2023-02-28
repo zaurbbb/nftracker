@@ -1,0 +1,47 @@
+/**
+* @desc         app styles.
+* @requires     variables.scss
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+:root {
+    //font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+html {
+    @extend %webkit-scrollbar;
+    font-size: 62.5%;
+}
+
+body {
+    height: 200vh;
+
+    font-size: 1.6rem;
+    font-family: $font-family-black;
+}
+
+.app {
+    display: flex;
+
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+main {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: $fs-regular;
+
+    width: 100%;
+    height: 100vh;
+}
