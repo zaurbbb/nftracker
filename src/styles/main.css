@@ -10,6 +10,27 @@
 * @desc         mixins of the app.
 * @requires     variables.scss
 */
+.header, .greeting__collection, .greeting__statistics {
+  align-items: center;
+  justify-content: center;
+}
+
+.header, .greeting__collection, .greeting__statistics, .greeting__about-us, .greeting__content {
+  display: flex;
+}
+
+.greeting__about-us, .greeting__content {
+  flex-direction: column;
+}
+
+.greeting__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 html ::-webkit-scrollbar {
   width: 5px;
   height: 8px;
@@ -146,14 +167,6 @@ h6 {
   font-style: normal;
 }
 
-h1 {
-  font-size: auto;
-}
-
-h2 {
-  font-size: auto;
-}
-
 pre,
 code {
   font-family: Consolas, Monaco, "Lucida Console", monospace;
@@ -169,14 +182,14 @@ code {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+:root {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
 }
 
 body {
   height: 200vh;
-  font-size: 1.6rem;
-  font-family: "NeueMachinaBlack", sans-serif;
+  font-size: 1.8rem;
+  font-family: "NeueMachinaRegular", sans-serif;
 }
 
 .app {
@@ -192,35 +205,113 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
   width: 100%;
-  height: 100vh;
 }
 
 /**
-* @desc         section styles.
-* @requires     none
+* @desc         greeting module styles.
+* @requires     variables
 */
+.greeting {
+  width: 100%;
+  height: 120vh;
+  position: relative;
+  outline: 1px solid red;
+}
+.greeting__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.greeting__content {
+  gap: 2.4rem;
+  width: 70%;
+}
+.greeting__about-us {
+  padding: 3.2rem 4.5rem;
+  border: 2px solid #D5FF40;
+  border-radius: 35px;
+  background: rgba(21, 24, 34, 0.3);
+}
+.greeting__description {
+  margin-top: 1.2rem;
+  color: #ffffff;
+}
+.greeting__statistics {
+  gap: 2.4rem;
+}
+.greeting__statistic {
+  text-align: center;
+}
+.greeting__collection {
+  gap: 2.4rem;
+}
+.greeting__card {
+  text-align: center;
+}
+.greeting__card-img {
+  width: 100%;
+  height: 100%;
+}
+.greeting__card-title {
+  color: #84878A;
+}
+
 /**
-* @desc         heading styles.
-* @requires     none,
+* @desc         header styles.
+* @requires     variables, placeholders
 */
+.header {
+  gap: 1.2rem;
+}
+.header__title {
+  font-family: "NeueMachinaBold", sans-serif;
+  color: #D5FF40;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: "NeueMachinaMedium", sans-serif;
+  color: #84878A;
+  transition: all 0.3s ease;
+}
+.header__button {
+  font-size: calc(1.8rem * 1);
+}
+
+/**
+* @desc         title styles.
+* @requires     variables
+*/
+.title {
+  margin: 0 !important;
+  line-height: 4.5rem;
+  font-size: 4.5rem;
+  font-family: "NeueMachinaBlack", sans-serif;
+}
+
 /**
 * @desc         button variants.
 * @requires     variables.scss
 */
 .button {
-  position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  vertical-align: baseline;
   margin: 0;
-  border-radius: 100%;
-  background-color: #2b93c7;
+  padding: 0.6rem 1.2rem 0.8rem;
+  border: 2px solid #D5FF40;
+  filter: drop-shadow(4px 4px 5px rgba(213, 255, 64, 0.25));
+  border-radius: 15px;
+  background: transparent;
   color: #D5FF40;
-  font-size: 1.4rem;
+  font-family: "NeueMachinaBold", sans-serif;
   font-weight: 500;
   line-height: 20px;
   list-style: none;
@@ -228,69 +319,16 @@ main {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-}
-.button--plus {
-  padding: 5px 5px !important;
-}
-.button--default {
-  padding: 5px 5px !important;
 }
 .button svg path {
   fill: #D5FF40;
 }
-
-.button:hover,
-.button:focus {
-  border-radius: 100%;
-  outline: 1px solid #2b93c7;
+.button:hover, .button:focus {
   background-color: #D5FF40;
-  color: #2b93c7;
+  color: #1C1D1F;
 }
-.button:hover svg path,
-.button:focus svg path {
-  fill: #2b93c7;
-}
-
-/**
-* @desc         input variants.
-* @requires     variables.scss
-*/
-.input {
-  border: none;
-  border-radius: 1.4rem;
-  outline: 2px solid #485460;
-  font-size: 1.4rem;
-  transition: all 0.1s ease-in-out;
-  color: #485460;
-}
-.input[type=text], .input[type=password], .input[type=email], .input[type=date] {
-  padding: 1.4rem 1.4rem;
-}
-.input[type=text]:hover, .input[type=password]:hover, .input[type=email]:hover, .input[type=date]:hover {
-  outline: 2px solid #D5FF40;
-}
-.input[type=text]:focus, .input[type=password]:focus, .input[type=email]:focus, .input[type=date]:focus {
-  outline: 3px solid #D5FF40;
-  color: #D5FF40;
-}
-.input[type=submit] {
-  padding: 1.4rem 1.4rem;
-  border: none;
-  outline: none;
-  background-color: #D5FF40;
-  font-size: inherit;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  color: #2b93c7;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-}
-.input[type=submit]:hover {
-  outline: 2px solid #D5FF40;
-  background-color: #2b93c7;
-  color: #D5FF40;
+.button:hover svg path, .button:focus svg path {
+  fill: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -54,7 +54,7 @@ body,
 input,
 select,
 textarea {
-    font-family: $font-family-regular;
+    font-family: $ff-regular;
 }
 
 // headings and paragraph
@@ -67,15 +67,7 @@ h6 {
     font-style: normal;
 }
 
-h1 {
-    font-size: auto;
-}
-
-h2 {
-    font-size: auto;
-}
-
 pre,
 code {
-    font-family: $font-family-code;
+    font-family: $ff-code;
 }

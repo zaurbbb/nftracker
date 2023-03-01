@@ -1,0 +1,80 @@
+/**
+* @desc         greeting module styles.
+* @requires     variables
+*/
+
+.greeting {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+
+    outline: 1px solid red;
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    &__content {
+        @extend %absolute-center;
+        @extend %flex-column;
+
+        gap: $fs-medium;
+
+        width: 70%;
+    }
+
+    &__about-us {
+        @extend %flex-column;
+
+        padding: $layout-padding;
+
+        border: 2px solid #D5FF40;
+        border-radius: $border-radius-large;
+
+        background: rgba(21, 24, 34, 0.3);
+    }
+
+    &__description {
+        margin-top: $fs-small;
+
+        color: $light-color;
+    }
+
+    &__statistics {
+        @extend %flex-row;
+        @extend %flex-center;
+        gap: $fs-medium;
+    }
+
+    &__statistic {
+        text-align: center;
+    }
+
+    &__collection {
+        @extend %flex-row;
+        @extend %flex-center;
+        gap: $fs-medium;
+    }
+
+    &__card {
+        text-align: center;
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-title {
+            color: $text-secondary-color;
+        }
+    }
+}
+
+

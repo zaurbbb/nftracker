@@ -1,21 +1,36 @@
 import React from "react";
-// import video from "../../../assets/videos/Greeting-video.mp4"
+
+import HeaderComponent from "../../../components/HeaderComponent";
+import GreetingModuleAboutUs from "./GreetingModuleAboutUs";
+import GreetingModuleStatistics from "./GreetingModuleStatistics";
+import GreetingModuleCollection from "./GreetingModuleCollection";
+
+import video from "../../../assets/videos/Greeting-Video.mp4"
+import LogosGroup from "../../../assets/images/LogosGroup-Image.png";
 
 const GreetingModule = () => {
     return (
         <section className="greeting">
-            {/*<video*/}
-            {/*    src={video}*/}
-            {/*    autoPlay={true}*/}
-            {/*    loop={true}*/}
-            {/*    muted*/}
-            {/*    className="greeting__video"*/}
-            {/*/>*/}
+            <video
+                src={video}
+                autoPlay={true}
+                loop={true}
+                muted
+                className="greeting__video"
+            />
 
-            {/*<div className="greeting__content">*/}
+            <div className="greeting__content">
+                <HeaderComponent />
+                <img
+                    src={LogosGroup}
+                    className="greeting__img"
+                    alt="logos group"
+                />
 
-            {/*    GreetingModule*/}
-            {/*</div>*/}
+                <GreetingModuleAboutUs />
+                <GreetingModuleStatistics />
+                <GreetingModuleCollection />
+            </div>
         </section>
     );
 };

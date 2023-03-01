@@ -1,8 +1,34 @@
 /**
-* @desc         heading styles.
-* @requires     none,
+* @desc         header styles.
+* @requires     variables, placeholders
 */
 
 .header {
+    @extend %flex-row;
+    @extend %flex-center;
+    gap: $fs-small;
 
+    &__title {
+        font-family: $ff-bold;
+        color: $text-primary-color;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $fs-xsmall;
+
+        font-family: $ff-medium;
+
+        color: $secondary-color;
+
+        transition: all 0.3s ease;
+    }
+
+    &__button {
+        font-size: calc(#{$fs-regular} * 1);
+    }
 }
+
+

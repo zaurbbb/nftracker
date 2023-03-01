@@ -6,12 +6,11 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "pages/app";
+@import "base/app";
 
-@import "modules/section";
 @import "modules/greeting";
 
 @import "components/header";
+@import "components/title";
 
 @import "ui/button";
-@import "ui/input";

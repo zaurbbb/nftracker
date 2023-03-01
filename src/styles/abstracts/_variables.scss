@@ -7,33 +7,28 @@
 // branding
 $primary-color: #D5FF40;
 $secondary-color: #84878A;
-$light-color: #2b93c7;
+$light-color: #ffffff;
 $danger-color: #F92626;
 $success-color: #26F93B;
 $info-color: #275ECE;
+$muted-color: #1C1D1F;
 
 // transparent
 $transparent-color: transparent;
 
-// grays
-$gray-color-1: #f4f6f8;
-$gray-color-2: #d2dae2;
-$gray-color-3: #8c96a9;
-$gray-color-4: #485460;
-$gray-color-5: #333333;
-$gray-color-6: #1d2b33;
 
 // font size
-$fs-small: 1.4rem;
-$fs-regular: 1.6rem; // -> base size
-$fs-large: 2.4rem;
+$fs-xsmall: 0.6rem;
+$fs-small: 1.2rem;
+$fs-regular: 1.8rem; // -> base size
+$fs-medium: 2.4rem;
+$fs-large: 3.2rem;
+$fs-massive: 4.5rem;
 
 // [element colors]
 
 // inputs
 $input-background-color: $light-color;
-$input-border-color: $gray-color-2;
-$input-placeholder-color: $gray-color-2;
 $input-max-width: 62rem;
 
 // webkit
@@ -43,23 +38,22 @@ $webkit-bg: rgba($info-color, .5);
 // [text - variables]
 // text colors
 $text-primary-color: $primary-color;
-$text-default-color: $gray-color-4;
-$text-tone-light-color: $gray-color-2;
-$text-toned-color: $gray-color-3;
-$text-title-color: $gray-color-4;
-$text-hover-color: $text-primary-color;
-$text-white-color: $light-color;
+$text-secondary-color: $secondary-color;
+$text-light-color: $light-color;
+$text-danger-color: $danger-color;
+$text-success-color: $success-color;
+$text-info-color: $info-color;
+$text-muted-color: $muted-color;
 
 // font family
-$font-family-black: "NeueMachinaBlack", sans-serif;
-$font-family-bold: "NeueMachinaBold", sans-serif;
-$font-family-light: "NeueMachinaLight", sans-serif;
-$font-family-medium: "NeueMachinaMedium", sans-serif;
-$font-family-regular: "NeueMachinaRegular", sans-serif;
-$font-family-ultrabold: "NeueMachinaUltrabold", sans-serif;
-$font-family-ultralight: "NeueMachinaUltralight", sans-serif;
-
-$font-family-code: Consolas, Monaco, "Lucida Console", monospace;
+$ff-black: "NeueMachinaBlack", sans-serif;
+$ff-ultrabold: "NeueMachinaUltrabold", sans-serif;
+$ff-bold: "NeueMachinaBold", sans-serif;
+$ff-medium: "NeueMachinaMedium", sans-serif;
+$ff-regular: "NeueMachinaRegular", sans-serif;
+$ff-light: "NeueMachinaLight", sans-serif;
+$ff-ultralight: "NeueMachinaUltralight", sans-serif;
+$ff-code: Consolas, Monaco, "Lucida Console", monospace;
 
 // font weights
 $font-w-light: 300;
@@ -72,12 +66,12 @@ $base-line-height: normal;
 
 // [border - variables]
 // border colors
-$border-default-color: $gray-color-2;
 $border-primary-color: $primary-color;
 $border-white-color: $light-color;
 
 // border radius
-$border-radius-regular: 10px;
+$border-radius-regular: 15px;
+$border-radius-large: 35px;
 $border-radius-circle: 100%;
 
 // [action - variables]
@@ -96,9 +90,9 @@ $xs:  360px;
 
 // [margins and paddings - variables]
 // paddings
-$button-square-padding: 5px 5px;
-$navlink-padding-x: 0px;
-$layout-padding-y: 1.25rem;
+$button-default-padding: $fs-xsmall $fs-small 0.8rem;
+$button-square-padding: $fs-xsmall $fs-xsmall;
+$layout-padding: $fs-large $fs-massive;
 
 // [shadow - variables]
 // shadows
