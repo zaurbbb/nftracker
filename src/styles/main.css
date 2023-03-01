@@ -10,16 +10,21 @@
 * @desc         mixins of the app.
 * @requires     variables.scss
 */
-.header, .greeting__collection, .greeting__statistics {
+.table__row, .table__item, .header, .greeting__swiper, .greeting__statistics, main {
   align-items: center;
   justify-content: center;
 }
 
-.header, .greeting__collection, .greeting__statistics, .greeting__about-us, .greeting__content {
+.table__item:first-child {
+  align-items: center;
+  justify-content: start;
+}
+
+.table__row, .table__item, .header, .greeting__swiper, .greeting__statistics, .table, .trends, .greeting__about-us, .greeting__content, main {
   display: flex;
 }
 
-.greeting__about-us, .greeting__content {
+.table, .trends, .greeting__about-us, .greeting__content, main {
   flex-direction: column;
 }
 
@@ -39,10 +44,10 @@ html ::-webkit-scrollbar {
 html ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: rgba(39, 94, 206, 0.5);
+  background-color: rgba(6, 29, 65, 0.5);
 }
 html ::-webkit-scrollbar-thumb:hover {
-  background-color: #275ECE;
+  background-color: #061d41;
 }
 
 /**
@@ -110,7 +115,7 @@ button {
 
 /**
 * @desc         adds default text styles
-* @requires     variables.scss
+* @requires     variables
 */
 @font-face {
   font-family: "NeueMachinaBlack";
@@ -174,7 +179,7 @@ code {
 
 /**
 * @desc         app styles.
-* @requires     variables.scss
+* @requires     variables, placeholders
 */
 *,
 *::before,
@@ -195,6 +200,7 @@ body {
 .app {
   display: flex;
   width: 100%;
+  background: url("../../assets/images/appBg-Image.png") center/cover no-repeat;
 }
 
 a {
@@ -203,14 +209,17 @@ a {
 
 main {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  gap: 4.5rem;
   width: 100%;
+}
+
+section {
+  width: 75%;
 }
 
 /**
 * @desc         greeting module styles.
-* @requires     variables
+* @requires     variables, placeholders
 */
 .greeting {
   width: 100%;
@@ -228,7 +237,7 @@ main {
 }
 .greeting__content {
   gap: 2.4rem;
-  width: 70%;
+  width: 75%;
 }
 .greeting__about-us {
   padding: 3.2rem 4.5rem;
@@ -246,9 +255,6 @@ main {
 .greeting__statistic {
   text-align: center;
 }
-.greeting__collection {
-  gap: 2.4rem;
-}
 .greeting__card {
   text-align: center;
 }
@@ -261,7 +267,15 @@ main {
 }
 
 /**
-* @desc         header styles.
+* @desc         trends module styles.
+* @requires     variables, placeholders
+*/
+.trends {
+  gap: 1.8rem;
+}
+
+/**
+* @desc         header component styles.
 * @requires     variables, placeholders
 */
 .header {
@@ -285,7 +299,50 @@ main {
 }
 
 /**
-* @desc         title styles.
+* @desc         table component styles.
+* @requires     variables, placeholders
+*/
+.table {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.table__row {
+  padding: 1.8rem 0;
+  border-radius: 15px;
+  transition: background-color 0.1s ease-in;
+}
+.table__row--heading {
+  font-weight: bold;
+}
+.table__row:hover {
+  cursor: pointer;
+  background-color: rgba(39, 94, 206, 0.3);
+}
+.table__item {
+  flex: 1;
+  gap: 1.2rem;
+}
+.table__item:first-child {
+  padding-left: 0.6rem;
+}
+.table__item--long {
+  flex-grow: 0;
+  flex-basis: 25%;
+}
+.table__item--danger {
+  color: #F92626;
+}
+.table__item--success {
+  color: #26F93B;
+}
+.table__img {
+  width: 4.5rem;
+}
+
+/**
+* @desc         title component styles.
 * @requires     variables
 */
 .title {
@@ -296,8 +353,8 @@ main {
 }
 
 /**
-* @desc         button variants.
-* @requires     variables.scss
+* @desc         button ui styles.
+* @requires     variables
 */
 .button {
   display: flex;
@@ -305,7 +362,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0.6rem 1.2rem 0.8rem;
+  padding: 0.6rem 1.6rem 0.8rem;
   border: 2px solid #D5FF40;
   filter: drop-shadow(4px 4px 5px rgba(213, 255, 64, 0.25));
   border-radius: 15px;

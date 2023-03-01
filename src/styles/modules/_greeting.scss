@@ -1,6 +1,6 @@
 /**
 * @desc         greeting module styles.
-* @requires     variables
+* @requires     variables, placeholders
 */
 
 .greeting {
@@ -27,7 +27,7 @@
 
         gap: $fs-medium;
 
-        width: 70%;
+        width: $content-width;
     }
 
     &__about-us {
@@ -42,7 +42,7 @@
     }
 
     &__description {
-        margin-top: $fs-small;
+        margin-top: $fs-xsmall;
 
         color: $light-color;
     }
@@ -57,10 +57,9 @@
         text-align: center;
     }
 
-    &__collection {
+    &__swiper {
         @extend %flex-row;
         @extend %flex-center;
-        gap: $fs-medium;
     }
 
     &__card {

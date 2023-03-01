@@ -1,0 +1,64 @@
+/**
+* @desc         table component styles.
+* @requires     variables, placeholders
+*/
+
+.table {
+    @extend %flex-column;
+
+    margin: 0 auto;
+
+    width: 100%;
+
+    font-size: $fs-small;
+    color: $light-color;
+
+    &__row, &__item {
+        @extend %flex-row;
+        @extend %flex-center;
+    }
+
+    &__row {
+        padding: $table-padding;
+
+        border-radius: $border-radius-small;
+
+        transition: background-color .1s ease-in;
+
+        &--heading {
+            font-weight: bold;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(39, 94, 206, 0.3);
+        }
+    }
+
+    &__item {
+        flex: 1;
+        gap: $fs-xsmall;
+
+        &:first-child {
+            @extend %flex-start;
+            padding-left: $fs-xxsmall ;
+        }
+
+        &--long {
+            flex-grow: 0;
+            flex-basis: 25%;
+        }
+
+        &--danger {
+            color: $danger-color;
+        }
+
+        &--success {
+            color: $success-color;
+        }
+    }
+
+    &__img {
+        width: $fs-massive;
+    }
+}

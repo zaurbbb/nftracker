@@ -1,7 +1,7 @@
 {
   "name": "nftracker",
   "version": "0.1.0",
-  "homepage": "https://zaurbbb.github.io/nftracker",
+  "homepage": "https://zaurbbb.github.io/nftracker/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

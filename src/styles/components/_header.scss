@@ -1,12 +1,12 @@
 /**
-* @desc         header styles.
+* @desc         header component styles.
 * @requires     variables, placeholders
 */
 
 .header {
     @extend %flex-row;
     @extend %flex-center;
-    gap: $fs-small;
+    gap: $fs-xsmall;
 
     &__title {
         font-family: $ff-bold;
@@ -17,7 +17,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: $fs-xsmall;
+        gap: $fs-xxsmall;
 
         font-family: $ff-medium;
 

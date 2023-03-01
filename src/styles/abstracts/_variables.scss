@@ -10,7 +10,7 @@ $secondary-color: #84878A;
 $light-color: #ffffff;
 $danger-color: #F92626;
 $success-color: #26F93B;
-$info-color: #275ECE;
+$info-color: #061d41;
 $muted-color: #1C1D1F;
 
 // transparent
@@ -18,8 +18,9 @@ $transparent-color: transparent;
 
 
 // font size
-$fs-xsmall: 0.6rem;
-$fs-small: 1.2rem;
+$fs-xxsmall: 0.6rem;
+$fs-xsmall: 1.2rem;
+$fs-small: 1.6rem;
 $fs-regular: 1.8rem; // -> base size
 $fs-medium: 2.4rem;
 $fs-large: 3.2rem;
@@ -70,7 +71,8 @@ $border-primary-color: $primary-color;
 $border-white-color: $light-color;
 
 // border radius
-$border-radius-regular: 15px;
+$border-radius-small: 15px;
+$border-radius-regular: 25px;
 $border-radius-large: 35px;
 $border-radius-circle: 100%;
 
@@ -81,18 +83,26 @@ $primary-hover-color-2: rgba($primary-color, 0.4);
 $primary-hover-color-3: rgba($primary-color, 0.6);
 
 // [breakpoints - variables]
-$xxl:  1400px;
-$xl:  1200px;
-$lg:  992px;
-$md:  768px;
-$sm:  540px;
-$xs:  360px;
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 540px;
+$xs: 360px;
 
 // [margins and paddings - variables]
 // paddings
-$button-default-padding: $fs-xsmall $fs-small 0.8rem;
-$button-square-padding: $fs-xsmall $fs-xsmall;
+$button-default-padding: $fs-xxsmall $fs-small 0.8rem;
+$button-square-padding: $fs-xxsmall $fs-xsmall;
 $layout-padding: $fs-large $fs-massive;
+$table-padding: $fs-regular 0;
+
+// [width and height - variables]
+// width
+$content-width: 75%;
+$table-item-basic-width: 50%;
+$table-item-long-width: 100%;
+
 
 // [shadow - variables]
 // shadows

@@ -4,7 +4,7 @@ import {
     Route,
     Routes
 } from "react-router-dom";
-import { publicRoutes } from "./config/routes";
+import { publicRoutes } from "./config/routesConrfig";
 
 const AppRouter = () => {
     return (

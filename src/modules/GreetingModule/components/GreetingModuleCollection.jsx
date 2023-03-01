@@ -12,9 +12,9 @@ import "swiper/css";
 
 const GreetingModuleCollection = () => {
     return (
-        <div className="greeting__collection">
+        <div>
             <Swiper
-                className="mySwiper greeting__collection"
+                className="mySwiper greeting__swiper"
                 slidesPerView={4}
                 loop={true}
                 autoplay={{

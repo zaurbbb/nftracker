@@ -1,6 +1,6 @@
 /**
-* @desc         button variants.
-* @requires     variables.scss
+* @desc         button ui styles.
+* @requires     variables
 */
 
 .button {
@@ -14,7 +14,7 @@
 
     border: 2px solid #D5FF40;
     filter: drop-shadow(4px 4px 5px rgba(213, 255, 64, 0.25));
-    border-radius: $border-radius-regular;
+    border-radius: $border-radius-small;
 
     background: transparent;
 
