@@ -10,7 +10,7 @@
 * @desc         mixins of the app.
 * @requires     variables.scss
 */
-.table__row, .table__item, .header, .greeting__swiper, .greeting__statistics, main {
+.button, .heading__content, .header, .chart-data-item--center, .greeting__swiper, .greeting__statistics, main, .table__row, .table__item {
   align-items: center;
   justify-content: center;
 }
@@ -20,11 +20,11 @@
   justify-content: start;
 }
 
-.table__row, .table__item, .header, .greeting__swiper, .greeting__statistics, .table, .trends, .greeting__about-us, .greeting__content, main {
+.button, .collapse-tabs, .heading__content, .heading, .header, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .table__row, .table__item, .trends, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .portfolio, .greeting__about-us, .greeting__content, main, .table--portfolio-balances .table__item, .table {
   display: flex;
 }
 
-.table, .trends, .greeting__about-us, .greeting__content, main {
+.trends, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .portfolio, .greeting__about-us, .greeting__content, main, .table--portfolio-balances .table__item, .table {
   flex-direction: column;
 }
 
@@ -153,7 +153,7 @@ button {
 }
 body {
   line-height: normal;
-  color: #D5FF40;
+  color: #ffffff;
 }
 
 body,
@@ -178,6 +178,112 @@ code {
 }
 
 /**
+* @desc         table component styles.
+* @requires     variables, placeholders
+*/
+.table {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.table__row {
+  border-radius: 15px;
+  transition: background-color 0.1s ease-in;
+}
+.table__row--heading {
+  font-weight: bold;
+}
+.table__row:hover {
+  cursor: pointer;
+  background-color: rgba(39, 94, 206, 0.3);
+}
+.table__item {
+  gap: 1.2rem;
+}
+.table__item:first-child {
+  padding-left: 0.6rem;
+}
+.table__item--danger {
+  color: #F92626;
+}
+.table__item--success {
+  color: #26F93B;
+}
+.table__img {
+  width: 3.8rem;
+}
+.table--trends .table__row {
+  padding: 1.8rem 0;
+}
+.table--trends .table__item:nth-child(1) {
+  width: 40%;
+}
+.table--trends .table__item:nth-child(2) {
+  width: 20%;
+}
+.table--trends .table__item:nth-child(3) {
+  width: 20%;
+}
+.table--trends .table__item:nth-child(4) {
+  width: 20%;
+}
+.table--trends .table__item:nth-child(5) {
+  width: 10%;
+}
+.table--trends .table__item:nth-child(6) {
+  width: 20%;
+}
+.table--trends .table__item:nth-child(7) {
+  width: 10%;
+}
+.table--trends .table__item:nth-child(8) {
+  width: 20%;
+}
+.table--collection, .table--items {
+  justify-content: space-between;
+}
+.table--collection .table__row, .table--items .table__row {
+  padding: 0.6rem 0;
+}
+.table--collection .table__item:nth-child(1) {
+  width: 80%;
+}
+.table--collection .table__item:nth-child(2) {
+  width: 20%;
+}
+.table--collection .table__item:nth-child(3) {
+  width: 20%;
+}
+.table--collection .table__item:nth-child(4) {
+  width: 20%;
+}
+.table--collection .table__item:nth-child(5) {
+  width: 20%;
+}
+.table--items .table__item:nth-child(1) {
+  width: 40%;
+}
+.table--items .table__item:nth-child(2) {
+  width: 30%;
+}
+.table--items .table__item:nth-child(3) {
+  width: 30%;
+}
+.table--items .table__item:nth-child(4) {
+  width: 30%;
+}
+.table--items .table__item:nth-child(5) {
+  width: 30%;
+}
+.table--portfolio-balances .table__row {
+  gap: 1.2rem;
+  padding: 1.2rem 3.8rem 1.2rem 0;
+}
+.table--portfolio-balances .table__row:hover {
+  background-color: transparent;
+}
+/**
 * @desc         app styles.
 * @requires     variables, placeholders
 */
@@ -200,7 +306,7 @@ body {
 .app {
   display: flex;
   width: 100%;
-  background: url("../../assets/images/appBg-Image.png") center/cover no-repeat;
+  background: url("../../assets/images/AppBg-Image.png") center/cover no-repeat;
 }
 
 a {
@@ -209,12 +315,19 @@ a {
 
 main {
   position: relative;
-  gap: 4.5rem;
+  gap: 4.8rem;
   width: 100%;
 }
 
 section {
   width: 75%;
+}
+
+.text--success {
+  color: #26F93B;
+}
+.text--danger {
+  color: #F92626;
 }
 
 /**
@@ -225,7 +338,6 @@ section {
   width: 100%;
   height: 120vh;
   position: relative;
-  outline: 1px solid red;
 }
 .greeting__video {
   position: absolute;
@@ -240,7 +352,7 @@ section {
   width: 75%;
 }
 .greeting__about-us {
-  padding: 3.2rem 4.5rem;
+  padding: 3.2rem 3.8rem;
   border: 2px solid #D5FF40;
   border-radius: 35px;
   background: rgba(21, 24, 34, 0.3);
@@ -253,7 +365,7 @@ section {
   gap: 2.4rem;
 }
 .greeting__statistic {
-  text-align: center;
+  text-align: center !important;
 }
 .greeting__card {
   text-align: center;
@@ -264,6 +376,119 @@ section {
 }
 .greeting__card-title {
   color: #84878A;
+}
+
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+.portfolio {
+  gap: 1.8rem;
+}
+.portfolio__statistics {
+  justify-content: space-between;
+}
+.portfolio__collapse {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 1.8rem;
+}
+.portfolio__card {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  margin-top: 1.2rem;
+  padding: 1.8rem 1.6rem;
+  border: 2px solid #84878A;
+  border-radius: 25px;
+}
+.portfolio__card--vertical {
+  justify-content: space-between;
+}
+.portfolio__card--horizontal {
+  justify-content: space-between;
+}
+.portfolio__card--content-bottom {
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1.8rem 10rem 1.8rem 1.6rem;
+}
+
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+.win-rate__item {
+  justify-content: space-between;
+  gap: 3.8rem;
+}
+
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+.chart__graph {
+  width: 20rem;
+  height: 14rem;
+  background: #D9D9D9;
+  border-radius: 15px;
+}
+.chart--line {
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  text-align: center;
+}
+.chart--bar {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 16rem;
+  height: 16rem;
+}
+
+.chart-values--horizontal {
+  justify-content: flex-end;
+  gap: 2.4rem;
+  margin-bottom: 1.2rem;
+  padding-right: 1.6rem;
+}
+.chart-values--vertical {
+  justify-content: flex-end;
+  gap: 1.6rem;
+}
+
+.chart-data {
+  gap: 0.6rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.chart-data-item {
+  gap: 0.6rem;
+}
+.chart-data-item--left {
+  align-items: center;
+}
+
+.chart-data-color {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.chart-data-color--primary {
+  background: #D5FF40;
+}
+.chart-data-color--highlight {
+  background: #275ECE;
+}
+.chart-data-color--highlight-light {
+  background: rgba(39, 94, 206, 0.5);
+}
+.chart-data-color--highlight-dark {
+  background: rgba(39, 94, 206, 0.2);
+}
+
+.chart-data-title {
+  word-break: keep-all;
 }
 
 /**
@@ -299,76 +524,59 @@ section {
 }
 
 /**
-* @desc         table component styles.
+* @desc         heading component styles.
 * @requires     variables, placeholders
 */
-.table {
-  margin: 0 auto;
+.heading {
+  justify-content: space-between;
+  margin: 0 !important;
+  line-height: 3.8rem;
+}
+.heading__title {
   width: 100%;
-  font-size: 1.6rem;
+}
+.heading__title--big {
+  font-family: "NeueMachinaBlack", sans-serif;
+  font-size: 4.8rem;
+  color: #D5FF40;
+}
+.heading__title--small {
+  margin-top: 1.8rem;
+  margin-left: 1.2rem;
+  font-family: "NeueMachinaRegular", sans-serif;
+  font-size: 2.4rem;
   color: #ffffff;
 }
-.table__row {
-  padding: 1.8rem 0;
-  border-radius: 15px;
-  transition: background-color 0.1s ease-in;
-}
-.table__row--heading {
-  font-weight: bold;
-}
-.table__row:hover {
-  cursor: pointer;
-  background-color: rgba(39, 94, 206, 0.3);
-}
-.table__item {
-  flex: 1;
+.heading__content {
   gap: 1.2rem;
+  color: #ffffff;
 }
-.table__item:first-child {
-  padding-left: 0.6rem;
-}
-.table__item--long {
-  flex-grow: 0;
-  flex-basis: 25%;
-}
-.table__item--danger {
-  color: #F92626;
-}
-.table__item--success {
+.heading__win-rate-value {
+  padding: 0 1.2rem;
+  border-radius: 9px;
+  background: rgba(38, 249, 59, 0.3);
   color: #26F93B;
-}
-.table__img {
-  width: 4.5rem;
 }
 
 /**
-* @desc         title component styles.
-* @requires     variables
+* @desc         collapse-tabs component styles.
+* @requires     variables, placeholders
 */
-.title {
-  margin: 0 !important;
-  line-height: 4.5rem;
-  font-size: 4.5rem;
-  font-family: "NeueMachinaBlack", sans-serif;
+.collapse-tabs {
+  gap: 3.2rem;
+  margin-top: 3.8rem;
 }
 
 /**
 * @desc         button ui styles.
-* @requires     variables
+* @requires     variables, placeholders
 */
 .button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  gap: 0.6rem;
   margin: 0;
   padding: 0.6rem 1.6rem 0.8rem;
-  border: 2px solid #D5FF40;
-  filter: drop-shadow(4px 4px 5px rgba(213, 255, 64, 0.25));
   border-radius: 15px;
   background: transparent;
-  color: #D5FF40;
-  font-family: "NeueMachinaBold", sans-serif;
   font-weight: 500;
   line-height: 20px;
   list-style: none;
@@ -377,15 +585,31 @@ section {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
-.button svg path {
+.button--primary {
+  font-family: "NeueMachinaBold", sans-serif;
+  border: 2px solid #D5FF40;
+  filter: drop-shadow(4px 4px 5px rgba(213, 255, 64, 0.25));
+  color: #D5FF40;
+}
+.button--primary svg path {
   fill: #D5FF40;
 }
-.button:hover, .button:focus {
+.button--primary:hover, .button--primary:focus {
   background-color: #D5FF40;
   color: #1C1D1F;
 }
-.button:hover svg path, .button:focus svg path {
+.button--primary:hover svg path, .button--primary:focus svg path {
   fill: #ffffff;
+}
+.button--highlight {
+  font-family: "NeueMachinaRegular", sans-serif;
+  font-size: 1.8rem;
+  color: #84878A;
+}
+.button--highlight-active {
+  border: #275ECE;
+  background-color: #275ECE;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

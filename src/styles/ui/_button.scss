@@ -1,25 +1,21 @@
 /**
 * @desc         button ui styles.
-* @requires     variables
+* @requires     variables, placeholders
 */
 
 .button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-row;
+    @extend %flex-center;
+    gap: $fs-xxsmall;
 
     margin: 0;
     padding: $button-default-padding;
 
-    border: 2px solid #D5FF40;
-    filter: drop-shadow(4px 4px 5px rgba(213, 255, 64, 0.25));
     border-radius: $border-radius-small;
 
     background: transparent;
 
-    color: $primary-color;
-    font-family: $ff-bold;
+
     font-weight: 500;
     line-height: 20px;
     list-style: none;
@@ -30,23 +26,48 @@
 
     transition: all .1s ease-in-out;
 
-    svg {
-        //@include size(100%, 100%);
-        path {
-            fill: $primary-color;
-        }
-    }
+    &--primary {
+        font-family: $ff-bold;
 
-    &:hover,
-    &:focus {
-        background-color: $border-primary-color;
+        border: $primary-border;
 
-        color: $text-muted-color;
+        filter: drop-shadow(4px 4px 5px rgba(213, 255, 64, 0.25));
+
+        color: $text-primary-color;
 
         svg {
             path {
-                fill: $light-color;
+                fill: $primary-color;
             }
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $border-primary-color;
+
+            color: $text-muted-color;
+
+            svg {
+                path {
+                    fill: $light-color;
+                }
+            }
+        }
+    }
+
+    &--highlight {
+        font-family: $ff-regular;
+        font-size: $fs-regular;
+
+        color: $text-secondary-color;
+
+        &-active {
+            border: $border-highlight-color;
+
+            background-color: $highlight-color;
+
+            color: $text-light-color;
+
         }
     }
 }

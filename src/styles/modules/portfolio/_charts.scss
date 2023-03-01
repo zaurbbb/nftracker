@@ -1,0 +1,94 @@
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+
+
+.chart {
+    &__graph {
+        width: 20rem;
+        height: 14rem;
+
+        background: #D9D9D9;
+        border-radius: $border-radius-small;
+    }
+
+    &--line {
+        @extend %flex-row;
+        flex-wrap: wrap;
+        gap: $fs-xsmall;
+
+        text-align: center;
+    }
+
+    &--bar {
+        position: absolute;
+        top: $fs-small;
+        right: $fs-small;
+
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+.chart-values {
+    &--horizontal {
+        @extend %flex-row;
+        justify-content: flex-end;
+        gap: $fs-medium;
+
+        margin-bottom: $fs-xsmall;
+        padding-right: $fs-small;
+    }
+
+    &--vertical {
+        @extend %flex-column;
+        justify-content: flex-end;
+        gap: $fs-small;
+    }
+}
+
+.chart-data {
+    @extend %flex-column;
+    gap: $fs-xxsmall;
+    overflow: hidden;
+
+    white-space: nowrap;
+}
+
+.chart-data-item {
+    @extend %flex-row;
+    gap: $fs-xxsmall;
+
+    &--center {
+        @extend %flex-center;
+    }
+    &--left {
+        align-items: center;
+    }
+}
+
+.chart-data-color {
+    width: $fs-small;
+    height: $fs-small;
+
+    &--primary {
+        background: $primary-color;
+    }
+
+    &--highlight {
+        background: $highlight-color;
+    }
+
+    &--highlight-light {
+        background: rgba($highlight-color, .5);
+    }
+
+    &--highlight-dark {
+        background: rgba($highlight-color, .2);
+    }
+}
+
+.chart-data-title {
+    word-break: keep-all;
+}

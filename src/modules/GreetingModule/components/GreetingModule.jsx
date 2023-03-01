@@ -6,7 +6,7 @@ import GreetingModuleStatistics from "./GreetingModuleStatistics";
 import GreetingModuleCollection from "./GreetingModuleCollection";
 
 import video from "../../../assets/videos/Greeting-Video.mp4"
-import LogosGroup from "../../../assets/images/LogosGroup-Image.png";
+import LogosGroupImage from "../../../assets/images/LogosGroup-Image.png";
 
 const GreetingModule = () => {
     return (
@@ -22,7 +22,7 @@ const GreetingModule = () => {
             <div className="greeting__content">
                 <HeaderComponent />
                 <img
-                    src={LogosGroup}
+                    src={LogosGroupImage}
                     className="greeting__img"
                     alt="logos group"
                 />

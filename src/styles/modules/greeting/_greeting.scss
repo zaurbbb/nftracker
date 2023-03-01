@@ -8,8 +8,6 @@
     height: 120vh;
     position: relative;
 
-    outline: 1px solid red;
-
     &__video {
         position: absolute;
         top: 0;
@@ -35,7 +33,7 @@
 
         padding: $layout-padding;
 
-        border: 2px solid #D5FF40;
+        border: $primary-border;
         border-radius: $border-radius-large;
 
         background: rgba(21, 24, 34, 0.3);
@@ -54,7 +52,7 @@
     }
 
     &__statistic {
-        text-align: center;
+        text-align: center!important;
     }
 
     &__swiper {

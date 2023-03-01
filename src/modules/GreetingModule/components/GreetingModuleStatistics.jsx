@@ -2,7 +2,7 @@ import React from "react";
 
 import { statisticsData } from "../data/statisticsData";
 
-import TitleComponent from "../../../components/TitleComponent";
+import HeadingComponent from "../../../components/HeadingComponent";
 
 const GreetingModuleStatistics = () => {
     return (
@@ -12,9 +12,9 @@ const GreetingModuleStatistics = () => {
                     key={statistic.description}
                     className="greeting__statistic"
                 >
-                    <TitleComponent
+                    <HeadingComponent
                         textValue={statistic.result}
-                        className="greeting"
+                        type="big"
                     />
                     <p className="greeting__description">
                         {statistic.description}

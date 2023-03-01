@@ -36,11 +36,13 @@ const HeaderComponent = () => {
                 <ButtonUI
                     textValue="APP"
                     className="header"
+                    color="primary"
                 />
             }
             <ButtonUI
                 textValue="Connect wallet"
                 className="header"
+                color="primary"
             />
 
         </header>

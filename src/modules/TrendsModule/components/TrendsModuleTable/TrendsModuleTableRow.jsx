@@ -1,14 +1,15 @@
 import React from "react";
-import TableMonkey from "../../../assets/images/TableMonkey-Image.png";
-import TableCat from "../../../assets/images/TableCat-Image.png";
+
+import TableMonkeyImage from "../../../../assets/images/TableMonkey-Image.png";
+import TableCatImage from "../../../../assets/images/TableCat-Image.png";
 
 const TrendsModuleTableRow = ({type}) => {
     function setTableImg () {
         switch (type) {
             case "monkey":
-                return TableMonkey;
+                return TableMonkeyImage;
             case "cat":
-                return TableCat;
+                return TableCatImage;
             default:
                 return;
         }
@@ -17,16 +18,16 @@ const TrendsModuleTableRow = ({type}) => {
     function setPercentVolumeClassName () {
         switch (type) {
             case "monkey":
-                return "table__item table__item--danger";
+                return "table__item text text--danger";
             case "cat":
-                return "table__item table__item--success";
+                return "table__item text text--success";
             default:
                 return "table__item";
         }
     }
     return (
         <div className="table__row">
-            <div className="table__item table__item--long">
+            <div className="table__item">
                 <img
                     className="table__img"
                     src={setTableImg()}

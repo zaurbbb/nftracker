@@ -1,0 +1,50 @@
+/**
+* @desc         heading component styles.
+* @requires     variables, placeholders
+*/
+
+.heading {
+    @extend %flex-row;
+    justify-content: space-between;
+    margin: 0 !important;
+    line-height: $fs-massive;
+
+    &__title {
+        width: 100%;
+
+        &--big {
+            font-family: $ff-black;
+            font-size: $fs-giant;
+            color: $text-primary-color;
+        }
+
+        &--small {
+            margin-top: $fs-regular;
+            margin-left: $fs-xsmall;
+
+            font-family: $ff-regular;
+            font-size: $fs-medium;
+            color: $text-light-color;
+        }
+    }
+
+    &__content {
+        @extend %flex-row;
+        @extend %flex-center;
+        gap: $fs-xsmall;
+
+        color: $light-color;
+    }
+
+    &__win-rate-value {
+        padding: 0 $fs-xsmall;
+
+        border-radius: 9px;
+
+        background: rgba(38, 249, 59, 0.3);
+
+        color: $success-color;
+    }
+}
+
+

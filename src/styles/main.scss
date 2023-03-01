@@ -5,14 +5,18 @@
 
 @import "base/reset";
 @import "base/typography";
+@import "base/table";
 
 @import "base/app";
 
-@import "modules/greeting";
-@import "modules/trends";
+@import "modules/greeting/greeting";
+@import "modules/portfolio/portfolio";
+@import "modules/portfolio/win-rate";
+@import "modules/portfolio/charts";
+@import "modules/trends/trends";
 
 @import "components/header";
-@import "base/table";
-@import "components/title";
+@import "components/heading";
+@import "components/collapse-tabs";
 
 @import "ui/button";

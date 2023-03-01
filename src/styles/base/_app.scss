@@ -29,7 +29,7 @@ body {
 
     width: 100%;
 
-    background: url("../../assets/images/appBg-Image.png") center/cover no-repeat;
+    background: url("../../assets/images/AppBg-Image.png") center/cover no-repeat;
 }
 
 a {
@@ -41,11 +41,21 @@ main {
 
     @extend %flex-column;
     @extend %flex-center;
-    gap: $fs-massive;
+    gap: $fs-giant;
 
     width: 100%;
 }
 
 section {
     width: $content-width;
+}
+
+.text {
+    &--success {
+        color: $success-color;
+    }
+
+    &--danger {
+        color: $danger-color;
+    }
 }

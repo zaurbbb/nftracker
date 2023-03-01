@@ -11,6 +11,7 @@ $light-color: #ffffff;
 $danger-color: #F92626;
 $success-color: #26F93B;
 $info-color: #061d41;
+$highlight-color: #275ECE;
 $muted-color: #1C1D1F;
 
 // transparent
@@ -24,7 +25,8 @@ $fs-small: 1.6rem;
 $fs-regular: 1.8rem; // -> base size
 $fs-medium: 2.4rem;
 $fs-large: 3.2rem;
-$fs-massive: 4.5rem;
+$fs-massive: 3.8rem;
+$fs-giant: 4.8rem;
 
 // [element colors]
 
@@ -45,6 +47,7 @@ $text-danger-color: $danger-color;
 $text-success-color: $success-color;
 $text-info-color: $info-color;
 $text-muted-color: $muted-color;
+$text-highlight-color: $highlight-color;
 
 // font family
 $ff-black: "NeueMachinaBlack", sans-serif;
@@ -66,9 +69,14 @@ $font-w-semi-bold: 600;
 $base-line-height: normal;
 
 // [border - variables]
+// border setup
+$primary-border: 2px solid $primary-color;
+$secondary-border: 2px solid $secondary-color;
 // border colors
 $border-primary-color: $primary-color;
-$border-white-color: $light-color;
+$border-light-color: $light-color;
+$border-info-color: $info-color;
+$border-highlight-color: $highlight-color;
 
 // border radius
 $border-radius-small: 15px;
@@ -96,12 +104,14 @@ $button-default-padding: $fs-xxsmall $fs-small 0.8rem;
 $button-square-padding: $fs-xxsmall $fs-xsmall;
 $layout-padding: $fs-large $fs-massive;
 $table-padding: $fs-regular 0;
+$card-padding: $fs-regular $fs-small;
 
 // [width and height - variables]
 // width
 $content-width: 75%;
 $table-item-basic-width: 50%;
 $table-item-long-width: 100%;
+$card-height: 30rem;
 
 
 // [shadow - variables]

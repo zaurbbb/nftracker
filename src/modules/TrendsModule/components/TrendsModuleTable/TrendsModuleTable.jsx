@@ -5,7 +5,7 @@ import TrendsModuleTableRow from "./TrendsModuleTableRow";
 
 const TrendsModuleTable = () => {
     return (
-        <div className="table--trends table">
+        <div className="table table--trends">
             <TrendsModuleTableHead />
             <TrendsModuleTableRow type="monkey"/>
             <TrendsModuleTableRow type="cat"/>

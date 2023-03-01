@@ -1,0 +1,16 @@
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+
+.win-rate {
+    @extend %flex-column;
+
+    //padding: 0 10rem;
+    &__item {
+        @extend %flex-row;
+        justify-content: space-between;
+        gap: $fs-massive;
+    }
+
+}

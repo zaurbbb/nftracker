@@ -1,0 +1,11 @@
+/**
+* @desc         collapse-tabs component styles.
+* @requires     variables, placeholders
+*/
+
+.collapse-tabs {
+    @extend %flex-row;
+    gap: $fs-large;
+
+    margin-top: $fs-massive;
+}

@@ -1,0 +1,53 @@
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+
+.portfolio {
+    @extend %flex-column;
+    gap: $fs-regular;
+
+    // base components
+    &__statistics {
+        @extend %flex-row;
+        justify-content: space-between;
+    }
+
+    &__collapse {
+        display: grid;
+        grid-template-columns: 0.8fr 1.5fr;
+        gap: $fs-regular;
+    }
+
+    &__card {
+        position: relative;
+
+        width: 100%;
+        height: $card-height;
+        margin-top: $fs-xsmall;
+        padding: $card-padding;
+
+        border: $secondary-border;
+        border-radius: $border-radius-regular;
+
+        &--vertical {
+            @extend %flex-column;
+            justify-content: space-between;
+        }
+
+        &--horizontal {
+            @extend %flex-row;
+            justify-content: space-between;
+        }
+
+        &--content-bottom {
+            @extend %flex-column;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            padding: $fs-regular 10rem $card-padding ;
+        }
+    }
+
+
+}

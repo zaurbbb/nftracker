@@ -1,7 +1,7 @@
 import React from "react";
 
-import TitleComponent from "../../../components/TitleComponent";
-import TrendsModuleTable from "./TrendsModuleTable";
+import HeadingComponent from "../../../components/HeadingComponent";
+import TrendsModuleTable from "./TrendsModuleTable/TrendsModuleTable";
 
 const TrendsModule = () => {
     return (
@@ -9,9 +9,9 @@ const TrendsModule = () => {
             className="trends"
             id={"trends"}
         >
-            <TitleComponent
+            <HeadingComponent
                 textValue={"Trends"}
-                className="trends"
+                type="big"
             />
 
             <TrendsModuleTable />
