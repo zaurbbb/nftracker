@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/nftracker/static/css/main.58d002b9.css",
-    "main.js": "/nftracker/static/js/main.1bfb9e5f.js",
+    "main.css": "/nftracker/static/css/main.9171dbd5.css",
+    "main.js": "/nftracker/static/js/main.de1c8151.js",
     "static/media/Greeting-Video.mp4": "/nftracker/static/media/Greeting-Video.aaeb7c96e8caaf9184d9.mp4",
     "static/media/AppBg-Image.png": "/nftracker/static/media/AppBg-Image.292ac6f9fbd5636ff23f.png",
     "static/media/LogosGroup-Image.png": "/nftracker/static/media/LogosGroup-Image.a54deba00d2899a85f64.png",
     "static/media/AnimeGirl-Image.png": "/nftracker/static/media/AnimeGirl-Image.94cd49fc05219740aea2.png",
     "static/media/NFTCard1-Image.png": "/nftracker/static/media/NFTCard1-Image.bd92c2ef7d5438a0e5da.png",
+    "static/media/ApiService-Image.png": "/nftracker/static/media/ApiService-Image.d84c58b08d6395ec69bf.png",
     "static/media/NeueMachina-Black.ttf": "/nftracker/static/media/NeueMachina-Black.014654455cfb26c46c76.ttf",
     "static/media/NeueMachina-Ultralight.ttf": "/nftracker/static/media/NeueMachina-Ultralight.e874e80d189631c23632.ttf",
     "static/media/NeueMachina-Medium.ttf": "/nftracker/static/media/NeueMachina-Medium.f720034f1ca535bd98d9.ttf",
@@ -40,11 +41,11 @@
     "static/media/Progress-Icon.svg": "/nftracker/static/media/Progress-Icon.7bea8f8614e1c875c7ade1083e49769e.svg",
     "static/media/Arrow-Icon.svg": "/nftracker/static/media/Arrow-Icon.58112bb6a1d5569660bcc18dea0f812c.svg",
     "static/media/GreenCircle-Icon.svg": "/nftracker/static/media/GreenCircle-Icon.927903f84bca26fb2daa3fce50d0429a.svg",
-    "main.58d002b9.css.map": "/nftracker/static/css/main.58d002b9.css.map",
-    "main.1bfb9e5f.js.map": "/nftracker/static/js/main.1bfb9e5f.js.map"
+    "main.9171dbd5.css.map": "/nftracker/static/css/main.9171dbd5.css.map",
+    "main.de1c8151.js.map": "/nftracker/static/js/main.de1c8151.js.map"
   },
   "entrypoints": [
-    "static/css/main.58d002b9.css",
-    "static/js/main.1bfb9e5f.js"
+    "static/css/main.9171dbd5.css",
+    "static/js/main.de1c8151.js"
   ]
 }
