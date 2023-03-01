@@ -59,3 +59,8 @@ section {
         color: $danger-color;
     }
 }
+
+.portfolio, .trends, .watch-list {
+    @extend %flex-column;
+    gap: $fs-regular;
+}

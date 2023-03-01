@@ -1,5 +1,5 @@
 import { ReactComponent as BoxIcon } from "../../../../assets/icons/Box-Icon.svg";
-import { ReactComponent as ArrowIcon } from "../../../../assets/icons/Arrow-Icon.svg";
+import { ReactComponent as ProgressIcon } from "../../../../assets/icons/Progress-Icon.svg";
 import { ReactComponent as RefreshIcon } from "../../../../assets/icons/Refresh-Icon.svg";
 
 export const collapseTabsData = [
@@ -13,7 +13,7 @@ export const collapseTabsData = [
         id: 2,
         textValue: "Activity",
         path: "/",
-        icon: <ArrowIcon />,
+        icon: <ProgressIcon />,
     },
     {
         id: 3,

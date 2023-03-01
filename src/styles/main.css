@@ -10,7 +10,7 @@
 * @desc         mixins of the app.
 * @requires     variables.scss
 */
-.button, .heading__content, .header, .chart-data-item--center, .greeting__swiper, .greeting__statistics, main, .table__row, .table__item {
+.button, .heading__content, .header, .watch-list-card__user, .chart-data-item--center, .greeting__swiper, .greeting__statistics, main, .table__row, .table__item {
   align-items: center;
   justify-content: center;
 }
@@ -20,11 +20,11 @@
   justify-content: start;
 }
 
-.button, .collapse-tabs, .heading__content, .heading, .header, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .table__row, .table__item, .trends, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .portfolio, .greeting__about-us, .greeting__content, main, .table--portfolio-balances .table__item, .table {
+.button, .collapse-tabs, .heading__content, .heading, .header, .watch-list-card__user, .watch-list-card__row, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .table__row, .table__item, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .portfolio, .trends, .watch-list, main, .table--portfolio-balances .table__item, .table {
   display: flex;
 }
 
-.trends, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .portfolio, .greeting__about-us, .greeting__content, main, .table--portfolio-balances .table__item, .table {
+.watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .portfolio, .trends, .watch-list, main, .table--portfolio-balances .table__item, .table {
   flex-direction: column;
 }
 
@@ -330,6 +330,10 @@ section {
   color: #F92626;
 }
 
+.portfolio, .trends, .watch-list {
+  gap: 1.8rem;
+}
+
 /**
 * @desc         greeting module styles.
 * @requires     variables, placeholders
@@ -382,9 +386,6 @@ section {
 * @desc         portfolio module styles.
 * @requires     variables, placeholders
 */
-.portfolio {
-  gap: 1.8rem;
-}
 .portfolio__statistics {
   justify-content: space-between;
 }
@@ -493,10 +494,38 @@ section {
 
 /**
 * @desc         trends module styles.
-* @requires     variables, placeholders
+* @requires     none
 */
-.trends {
-  gap: 1.8rem;
+/**
+* @desc         watch-list module styles.
+* @requires     none
+*/
+.watch-list-card {
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+.watch-list-card__content {
+  gap: 1.2rem;
+  width: 95%;
+  margin-top: -8%;
+  padding: 1.8rem 1.2rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: rgba(132, 135, 138, 0.2);
+}
+.watch-list-card__row {
+  align-items: center;
+  justify-content: space-between;
+}
+.watch-list-card__user {
+  gap: 0.6rem;
+}
+.watch-list-card__img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
 }
 
 /**

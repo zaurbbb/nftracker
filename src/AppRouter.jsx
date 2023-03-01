@@ -16,15 +16,15 @@ const AppRouter = () => {
                     path={route.path}
                 />
             )}
-            <Route
-                path="*"
-                element={
-                    <Navigate
-                        to="/"
-                        replace
-                    />
-                }
-            />
+            {/*<Route*/}
+            {/*    path="*"*/}
+            {/*    element={*/}
+            {/*        <Navigate*/}
+            {/*            to="/"*/}
+            {/*            replace*/}
+            {/*        />*/}
+            {/*    }*/}
+            {/*/>*/}
         </Routes>
     );
 };

@@ -4,8 +4,6 @@
 */
 
 .portfolio {
-    @extend %flex-column;
-    gap: $fs-regular;
 
     // base components
     &__statistics {

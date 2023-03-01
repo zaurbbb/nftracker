@@ -1,11 +1,10 @@
 /**
 * @desc         trends module styles.
-* @requires     variables, placeholders
+* @requires     none
 */
 
 .trends {
-    @extend %flex-column;
-    gap: $fs-regular;
+
 }
 
 

@@ -1,0 +1,48 @@
+/**
+* @desc         watch-list module styles.
+* @requires     none
+*/
+
+.watch-list {
+
+}
+
+.watch-list-card {
+    @extend %flex-column;
+    align-items: center;
+    gap: $fs-xxsmall;
+
+    width: 100%;
+    &__content {
+        @extend %flex-column;
+        gap: $fs-xsmall;
+
+        width: 95%;
+        margin-top: -8%;
+        padding: $fs-regular $fs-xsmall;
+
+        border-bottom-left-radius:  $border-radius-regular;
+        border-bottom-right-radius:  $border-radius-regular;
+
+        background: rgba($secondary-color, 0.2);
+    }
+
+    &__row {
+        @extend %flex-row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__user {
+        @extend %flex-row;
+        @extend %flex-center;
+        gap: $fs-xxsmall;
+    }
+
+    &__img {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        border-radius:  $border-radius-regular;
+    }
+}

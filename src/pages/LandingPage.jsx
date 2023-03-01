@@ -3,6 +3,7 @@ import React from "react";
 import { GreetingModule } from "../modules/GreetingModule";
 import { TrendsModule } from "../modules/TrendsModule";
 import { PortfolioModule } from "../modules/PortfolioModule";
+import { WatchListModule } from "../modules/WatchListModule";
 
 const LandingPage = () => {
     return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
             <GreetingModule />
             <TrendsModule />
             <PortfolioModule />
+            <WatchListModule />
         </>
     );
 };
