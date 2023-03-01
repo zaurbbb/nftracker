@@ -1,7 +1,7 @@
 import React from "react";
 
 import HeadingComponent from "../../../components/HeadingComponent";
-import WatchListSwiper from "./WatchListSwiper";
+import WatchListModuleSwiper from "./WatchListModuleSwiper";
 
 const WatchListModule = () => {
     return (
@@ -14,8 +14,7 @@ const WatchListModule = () => {
                 type="big"
             />
 
-            <WatchListSwiper />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <WatchListModuleSwiper />
         </section>
     );
 };

@@ -58,9 +58,17 @@ section {
     &--danger {
         color: $danger-color;
     }
+
+    &--secondary {
+        color: $secondary-color;
+    }
+
+    &--bold {
+        font-weight: $fw-semi-bold;
+    }
 }
 
-.portfolio, .trends, .watch-list {
+.portfolio, .trends, .watch-list, .mints {
     @extend %flex-column;
     gap: $fs-regular;
 }

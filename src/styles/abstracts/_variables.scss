@@ -60,10 +60,10 @@ $ff-ultralight: "NeueMachinaUltralight", sans-serif;
 $ff-code: Consolas, Monaco, "Lucida Console", monospace;
 
 // font weights
-$font-w-light: 300;
-$font-w-regular: 400;
-$font-w-medium: 500;
-$font-w-semi-bold: 600;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
 
 // inline hights
 $base-line-height: normal;
@@ -108,7 +108,7 @@ $card-padding: $fs-regular $fs-small;
 
 // [width and height - variables]
 // width
-$content-width: 75%;
+$content-width: 78%;
 $table-item-basic-width: 50%;
 $table-item-long-width: 100%;
 $card-height: 30rem;

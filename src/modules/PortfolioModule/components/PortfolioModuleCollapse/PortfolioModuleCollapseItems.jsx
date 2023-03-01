@@ -72,7 +72,8 @@ const PortfolioModuleCollapseItems = () => {
                             src={TableCatImage}
                             alt="Cat avatar"
                         />
-                         0.0071
+                        WETH <br/>
+                        0.0071
                     </div>
                     <div className="table__item">—</div>
                     <div className="table__item">—</div>

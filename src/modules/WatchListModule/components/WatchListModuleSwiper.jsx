@@ -11,7 +11,7 @@ import { watchListData } from "../data/watchListData";
 import TableCatImage from "../../../assets/images/TableCat-Image.png";
 import { ReactComponent as ArrowIcon } from "../../../assets/icons/Arrow-Icon.svg";
 
-const WatchListSwiper = () => {
+const WatchListModuleSwiper = () => {
     return (
         <div>
             <Swiper
@@ -66,4 +66,4 @@ const WatchListSwiper = () => {
     );
 };
 
-export default WatchListSwiper;
+export default WatchListModuleSwiper;

@@ -1,4 +1,4 @@
-import { ReactComponent as LightningIcon } from "../assets/icons/Lightning-Icon.svg";
+import { ReactComponent as LightningSecondaryIcon } from "../assets/icons/LightningSecondary-Icon.svg";
 import { ReactComponent as PortfolioIcon } from "../assets/icons/Portfolio-Icon.svg";
 import { ReactComponent as CompassIcon } from "../assets/icons/Compass-Icon.svg";
 import { ReactComponent as TargetIcon } from "../assets/icons/Target-Icon.svg";
@@ -9,7 +9,7 @@ const navConfig = [
         id: 1,
         path: "#trends",
         textValue: "Trends",
-        icon: <LightningIcon />
+        icon: <LightningSecondaryIcon />
     },
     {
         id: 2,

@@ -4,6 +4,7 @@ import { GreetingModule } from "../modules/GreetingModule";
 import { TrendsModule } from "../modules/TrendsModule";
 import { PortfolioModule } from "../modules/PortfolioModule";
 import { WatchListModule } from "../modules/WatchListModule";
+import { MintsModule } from "../modules/MintsModule";
 
 const LandingPage = () => {
     return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
             <TrendsModule />
             <PortfolioModule />
             <WatchListModule />
+            <MintsModule />
         </>
     );
 };

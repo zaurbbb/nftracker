@@ -10,21 +10,16 @@
 * @desc         mixins of the app.
 * @requires     variables.scss
 */
-.button, .heading__content, .header, .watch-list-card__user, .chart-data-item--center, .greeting__swiper, .greeting__statistics, main, .table__row, .table__item {
+.button, .heading__content, .header, .watch-list-card__user, .chart-data-item--center, .greeting__swiper, .greeting__statistics, .table--mints-live .table__sub-item, .table__item:not(.table__item--content-start), main {
   align-items: center;
   justify-content: center;
 }
 
-.table__item:first-child {
-  align-items: center;
-  justify-content: start;
-}
-
-.button, .collapse-tabs, .heading__content, .heading, .header, .watch-list-card__user, .watch-list-card__row, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .table__row, .table__item, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .portfolio, .trends, .watch-list, main, .table--portfolio-balances .table__item, .table {
+.button, .collapse-tabs, .heading__content, .heading, .header, .watch-list-card__user, .watch-list-card__row, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .table--mints-live .table__sub-item, .table__row, .table__item, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, .portfolio, .trends, .watch-list, .mints, main {
   display: flex;
 }
 
-.watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .portfolio, .trends, .watch-list, main, .table--portfolio-balances .table__item, .table {
+.watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, .portfolio, .trends, .watch-list, .mints, main {
   flex-direction: column;
 }
 
@@ -178,6 +173,63 @@ code {
 }
 
 /**
+* @desc         app styles.
+* @requires     variables, placeholders
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+body {
+  height: 200vh;
+  font-size: 1.8rem;
+  font-family: "NeueMachinaRegular", sans-serif;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  background: url("../../assets/images/AppBg-Image.png") center/cover no-repeat;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  position: relative;
+  gap: 4.8rem;
+  width: 100%;
+}
+
+section {
+  width: 78%;
+}
+
+.text--success {
+  color: #26F93B;
+}
+.text--danger {
+  color: #F92626;
+}
+.text--secondary {
+  color: #84878A;
+}
+.text--bold {
+  font-weight: 600;
+}
+
+.portfolio, .trends, .watch-list, .mints {
+  gap: 1.8rem;
+}
+
+/**
 * @desc         table component styles.
 * @requires     variables, placeholders
 */
@@ -191,18 +243,24 @@ code {
   border-radius: 15px;
   transition: background-color 0.1s ease-in;
 }
-.table__row--heading {
-  font-weight: bold;
+.table__row:first-child:hover {
+  background-color: transparent;
 }
 .table__row:hover {
   cursor: pointer;
   background-color: rgba(39, 94, 206, 0.3);
+}
+.table__row--heading {
+  font-weight: bold;
 }
 .table__item {
   gap: 1.2rem;
 }
 .table__item:first-child {
   padding-left: 0.6rem;
+}
+.table__item:nth-child(2) {
+  text-align: center;
 }
 .table__item--danger {
   color: #F92626;
@@ -213,6 +271,11 @@ code {
 .table__img {
   width: 3.8rem;
 }
+
+/**
+* @desc         table component variants.
+* @requires     variables, placeholders
+*/
 .table--trends .table__row {
   padding: 1.8rem 0;
 }
@@ -283,55 +346,50 @@ code {
 .table--portfolio-balances .table__row:hover {
   background-color: transparent;
 }
-/**
-* @desc         app styles.
-* @requires     variables, placeholders
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.table--mints-top .table__row {
+  justify-content: space-between;
+  padding: 1.2rem 0;
 }
-
-:root {
-  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+.table--mints-top .table__row:first-child .table__item:first-child {
+  justify-content: space-around !important;
 }
-
-body {
-  height: 200vh;
-  font-size: 1.8rem;
-  font-family: "NeueMachinaRegular", sans-serif;
+.table--mints-top .table__item:nth-child(1) {
+  width: 25%;
 }
-
-.app {
-  display: flex;
+.table--mints-top .table__item:nth-child(2) {
+  width: 9%;
+}
+.table--mints-top .table__item:nth-child(3) {
+  width: 9%;
+}
+.table--mints-top .table__item:nth-child(4) {
+  width: 9%;
+}
+.table--mints-top .table__item:nth-child(5) {
+  width: 9%;
+}
+.table--mints-top .table__item:nth-child(6) {
+  width: 9%;
+}
+.table--mints-top .table__item:nth-child(7) {
+  width: 9%;
+}
+.table--mints-live .table {
+  justify-content: space-between;
+}
+.table--mints-live .table__row {
+  gap: 1.2rem;
+  padding: 1.2rem;
+}
+.table--mints-live .table__row:not(:first-child) .table__item:nth-child(2) {
+  align-items: flex-start;
   width: 100%;
-  background: url("../../assets/images/AppBg-Image.png") center/cover no-repeat;
 }
-
-a {
-  color: inherit;
+.table--mints-live .table__row:not(:first-child) .table__item:nth-child(3) {
+  justify-content: flex-end;
 }
-
-main {
-  position: relative;
-  gap: 4.8rem;
-  width: 100%;
-}
-
-section {
-  width: 75%;
-}
-
-.text--success {
-  color: #26F93B;
-}
-.text--danger {
-  color: #F92626;
-}
-
-.portfolio, .trends, .watch-list {
-  gap: 1.8rem;
+.table--mints-live .table__sub-item {
+  gap: 1.2rem;
 }
 
 /**
@@ -353,7 +411,7 @@ section {
 }
 .greeting__content {
   gap: 2.4rem;
-  width: 75%;
+  width: 78%;
 }
 .greeting__about-us {
   padding: 3.2rem 3.8rem;
@@ -526,6 +584,16 @@ section {
   width: 100%;
   height: 100%;
   border-radius: 25px;
+}
+
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+.mints__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 0.8fr;
+  gap: 1.8rem;
 }
 
 /**

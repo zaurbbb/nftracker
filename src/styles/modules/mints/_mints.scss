@@ -1,0 +1,12 @@
+/**
+* @desc         portfolio module styles.
+* @requires     variables, placeholders
+*/
+
+.mints {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 2fr 0.8fr;
+        gap: $fs-regular;
+    }
+}

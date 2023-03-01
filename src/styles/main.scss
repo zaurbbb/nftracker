@@ -5,9 +5,10 @@
 
 @import "base/reset";
 @import "base/typography";
-@import "base/table";
 
-@import "base/app";
+@import "general/app";
+@import "general/table";
+@import "general/table-variants";
 
 @import "modules/greeting/greeting";
 @import "modules/portfolio/portfolio";
@@ -15,6 +16,7 @@
 @import "modules/portfolio/charts";
 @import "modules/trends/trends";
 @import "modules/watch-list/watch-list";
+@import "modules/mints/mints";
 
 @import "components/header";
 @import "components/heading";

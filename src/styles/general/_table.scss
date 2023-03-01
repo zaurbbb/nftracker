@@ -1,0 +1,59 @@
+/**
+* @desc         table component styles.
+* @requires     variables, placeholders
+*/
+
+.table {
+    @extend %flex-column;
+    //justify-content: space-between;
+
+    margin: 0 auto;
+
+    width: 100%;
+
+    font-size: $fs-small;
+    color: $light-color;
+
+    &__row, &__item {
+        @extend %flex-row;
+    }
+
+    &__row {
+        border-radius: $border-radius-small;
+
+        transition: background-color .1s ease-in;
+
+        &:first-child {
+            &:hover { background-color: transparent; }
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(39, 94, 206, 0.3);
+        }
+
+        &--heading { font-weight: bold; }
+    }
+
+    &__item {
+        gap: $fs-xsmall;
+
+        &:first-child {
+            padding-left: $fs-xxsmall;
+        }
+
+        &:nth-child(2) { text-align: center; }
+
+        &:not(&--content-start) {
+            @extend %flex-center;
+        }
+
+        &--danger { color: $danger-color; }
+
+        &--success { color: $success-color; }
+    }
+
+    &__img {
+        width: $fs-massive;
+    }
+}
