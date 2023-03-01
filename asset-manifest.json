@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/nftracker/static/css/main.b65063d7.css",
+    "main.js": "/nftracker/static/js/main.b2480bcc.js",
+    "static/media/Greeting-Video.mp4": "/nftracker/static/media/Greeting-Video.aaeb7c96e8caaf9184d9.mp4",
+    "static/media/LogosGroup-Image.png": "/nftracker/static/media/LogosGroup-Image.a54deba00d2899a85f64.png",
+    "static/media/NFTCard1-Image.png": "/nftracker/static/media/NFTCard1-Image.bd92c2ef7d5438a0e5da.png",
+    "static/media/NeueMachina-Black.ttf": "/nftracker/static/media/NeueMachina-Black.014654455cfb26c46c76.ttf",
+    "static/media/NeueMachina-Ultralight.ttf": "/nftracker/static/media/NeueMachina-Ultralight.e874e80d189631c23632.ttf",
+    "static/media/NeueMachina-Medium.ttf": "/nftracker/static/media/NeueMachina-Medium.f720034f1ca535bd98d9.ttf",
+    "static/media/NeueMachina-Regular.ttf": "/nftracker/static/media/NeueMachina-Regular.4dc4b2a360a973d59975.ttf",
+    "static/media/NeueMachina-Light.ttf": "/nftracker/static/media/NeueMachina-Light.28c93e08edca1900c014.ttf",
+    "static/media/NeueMachina-Ultrabold.ttf": "/nftracker/static/media/NeueMachina-Ultrabold.e7dc54d6addc0790114b.ttf",
+    "static/media/NeueMachina-Bold.ttf": "/nftracker/static/media/NeueMachina-Bold.e3f0d560c71e5363d34c.ttf",
+    "static/media/NFTCard2-Image.png": "/nftracker/static/media/NFTCard2-Image.ac0e45de0dc845759f50.png",
+    "static/media/NFTCard3-Image.png": "/nftracker/static/media/NFTCard3-Image.18b5ecfb4befbee01fd6.png",
+    "static/media/Lightning-Icon.svg": "/nftracker/static/media/Lightning-Icon.0a418a1bafea1eb78d1a507b85f6af3c.svg",
+    "static/media/Target-Icon.svg": "/nftracker/static/media/Target-Icon.743b94913befbbc94aa50e33695ee4c9.svg",
+    "static/media/Spaceship-Icon.svg": "/nftracker/static/media/Spaceship-Icon.89997144a3aa10cf060356773315bb7e.svg",
+    "static/media/Portfolio-Icon.svg": "/nftracker/static/media/Portfolio-Icon.7fb4f2aeb776a714142389d54ede9c69.svg",
+    "index.html": "/nftracker/index.html",
+    "static/media/Compass-Icon.svg": "/nftracker/static/media/Compass-Icon.838c34eb4be625f01c2ba0a195ca42d3.svg",
+    "main.b65063d7.css.map": "/nftracker/static/css/main.b65063d7.css.map",
+    "main.b2480bcc.js.map": "/nftracker/static/js/main.b2480bcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b65063d7.css",
+    "static/js/main.b2480bcc.js"
+  ]
+}
