@@ -14,10 +14,10 @@ const PortfolioModule = () => {
     return (
         <section
             className="portfolio"
-            id={"portfolio"}
+            id="portfolio"
         >
             <HeadingComponent
-                textValue={"Portfolio"}
+                textValue="PORTFOLIO"
                 type="big"
             >
                 <CashMoneyIcon />

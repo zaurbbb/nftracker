@@ -8,10 +8,10 @@ const MintsModule = () => {
     return (
         <section
             className="mints"
-            id={"mints"}
+            id="mints"
         >
             <HeadingComponent
-                textValue={"Mints"}
+                textValue="MINTS"
                 type="big"
             />
 
@@ -19,8 +19,6 @@ const MintsModule = () => {
                 <MintsModuleTop />
                 <MintsModuleLive />
             </div>
-
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </section>
     );
 };

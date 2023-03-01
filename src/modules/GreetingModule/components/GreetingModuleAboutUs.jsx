@@ -5,7 +5,7 @@ const GreetingModuleAboutUs = () => {
     return (
         <div className="greeting__about-us">
             <HeadingComponent
-                textValue="About Us"
+                textValue="ABOUT US"
                 type="big"
             />
 

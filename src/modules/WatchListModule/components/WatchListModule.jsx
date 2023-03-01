@@ -7,10 +7,10 @@ const WatchListModule = () => {
     return (
         <section
             className="watch-list"
-            id={"watchList"}
+            id="watchList"
         >
             <HeadingComponent
-                textValue={"Watchlist"}
+                textValue="WATCHLIST"
                 type="big"
             />
 

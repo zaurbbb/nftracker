@@ -1,0 +1,24 @@
+/**
+* @desc         greeting module styles.
+* @requires     variables, placeholders
+*/
+
+.api-service {
+    &__content {
+        @extend %flex-column;
+        @extend %flex-center;
+        gap: $fs-large;
+    }
+
+    &__coming-soon {
+        width: 90%;
+        padding: $fs-giant;
+
+        border: $secondary-border;
+        border-radius: $border-radius-large;
+
+        text-align: center;
+    }
+
+    &__img {width: 100%;}
+}

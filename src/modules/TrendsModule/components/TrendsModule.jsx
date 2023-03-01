@@ -7,10 +7,10 @@ const TrendsModule = () => {
     return (
         <section
             className="trends"
-            id={"trends"}
+            id="trends"
         >
             <HeadingComponent
-                textValue={"Trends"}
+                textValue="TRENDS"
                 type="big"
             />
 

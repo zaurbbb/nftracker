@@ -14,7 +14,7 @@ const HeadingComponent = ({ children, textValue, type }) => {
     return (
         <div className="heading">
             <p className={setHeadingTitleClassName()}>
-                {type === "small" ? textValue :textValue.toUpperCase()}
+                {textValue}
             </p>
 
             <div className="heading__content">
