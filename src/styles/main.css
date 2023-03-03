@@ -10,25 +10,17 @@
 * @desc         mixins of the app.
 * @requires     variables.scss
 */
-.button, .heading__content, .header, .api-service__content, .watch-list-card__user, .chart-data-item--center, .greeting__swiper, .greeting__statistics, .table--mints-live .table__sub-item, .table__item:not(.table__item--content-start), main {
+.button, .heading__content, .header, .api-service__content, .watch-list-card__user, .chart-data-item--center, .greeting__swiper, .greeting__statistics, .greeting, .table--mints-live .table__sub-item, .table__item:not(.table__item--content-start), main {
   align-items: center;
   justify-content: center;
 }
 
-.button, .collapse-tabs, .heading__content, .heading, .header, .watch-list-card__user, .watch-list-card__row, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .table--mints-live .table__sub-item, .table__row, .table__item, .api-service__content, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, .portfolio, .trends, .watch-list, .mints, main {
+.button, .collapse-tabs, .heading__content, .heading, .header, .watch-list-card__user, .watch-list-card__row, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .greeting, .table--mints-live .table__sub-item, .table__row, .table__item, .api-service__content, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, .portfolio, .trends, .watch-list, .mints, main {
   display: flex;
 }
 
 .api-service__content, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, .portfolio, .trends, .watch-list, .mints, main {
   flex-direction: column;
-}
-
-.greeting__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 html ::-webkit-scrollbar {
@@ -381,6 +373,9 @@ section {
   gap: 1.2rem;
   padding: 1.2rem;
 }
+.table--mints-live .table__row:hover {
+  background: rgba(132, 135, 138, 0.5);
+}
 .table--mints-live .table__row:not(:first-child) .table__item:nth-child(2) {
   align-items: flex-start;
   width: 100%;
@@ -398,20 +393,22 @@ section {
 */
 .greeting {
   width: 100%;
-  height: 120vh;
   position: relative;
 }
 .greeting__video {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .greeting__content {
+  z-index: 1;
   gap: 2.4rem;
   width: 78%;
+  padding: 5rem 0;
 }
 .greeting__about-us {
   padding: 3.2rem 3.8rem;

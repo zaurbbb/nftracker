@@ -97,6 +97,10 @@
 
                 padding: $fs-xsmall;
 
+                &:hover {
+                    background: rgba($secondary-color, .5);
+                }
+
                 &:not(:first-child) {
                     .table__item {
                         @extend %flex-column;
