@@ -16,6 +16,7 @@
 
     &__row, &__item {
         @extend %flex-row;
+        align-items: center;
     }
 
     &__row {
@@ -40,7 +41,6 @@
 
         &:first-child {
             padding-left: $fs-xxsmall;
-            text-align: left;
         }
 
         &:nth-child(2) { text-align: center; }

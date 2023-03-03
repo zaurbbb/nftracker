@@ -240,6 +240,9 @@ section {
   font-size: 1.6rem;
   color: #ffffff;
 }
+.table__row, .table__item {
+  align-items: center;
+}
 .table__row {
   border-radius: 15px;
   transition: background-color 0.1s ease-in;
@@ -259,7 +262,6 @@ section {
 }
 .table__item:first-child {
   padding-left: 0.6rem;
-  text-align: left;
 }
 .table__item:nth-child(2) {
   text-align: center;
@@ -283,7 +285,6 @@ section {
 }
 .table--trends .table__item:nth-child(1) {
   width: 40%;
-  text-align: left;
 }
 .table--trends .table__item:nth-child(2) {
   width: 20%;
