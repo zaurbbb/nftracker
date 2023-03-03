@@ -27,7 +27,7 @@
 }
 
 %flex-row {
-    display: flex;
+    display: flex !important;
 }
 
 %flex-column {
@@ -59,6 +59,19 @@
             &:hover {
                 background-color: $info-color;
             }
+        }
+    }
+}
+
+// drop the webkit scrollbar
+%dropped-webkit-scrollbar {
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background-color: transparent;
+
+        &-thumb {
+            background-color: transparent;
         }
     }
 }

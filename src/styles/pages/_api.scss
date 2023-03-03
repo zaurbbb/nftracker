@@ -1,0 +1,16 @@
+/**
+* @desc         api page styles.
+* @requires     variables, placeholders
+*/
+
+.app {
+    &--api-page {
+        padding: $fs-large 0;
+
+        main {
+            margin-right: -$sidebar-width;
+
+            @extend %dropped-webkit-scrollbar;
+        }
+    }
+}

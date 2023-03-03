@@ -2,7 +2,7 @@ import React from "react";
 
 import HeadingComponent from "../../../../components/HeadingComponent";
 
-import TableCatImage from "../../../../assets/images/TableCat-Image.png";
+import TableCatImage from "../../../../assets/images/TableCatImage.png";
 
 const PortfolioModuleCollapseItems = () => {
     return (

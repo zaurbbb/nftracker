@@ -11,9 +11,11 @@ import ButtonUI from "../ui/ButtonUI";
 
 const HeaderComponent = () => {
     const location = useLocation();
+    const isLandingPagePathname = location.pathname === "/";
+    const headerClassName = location.pathname.includes("api") ? "header header--width" : "header";
 
     return (
-        <header className="header">
+        <header className={headerClassName}>
             <Link
                 to="/"
                 className="header__title"
@@ -21,7 +23,7 @@ const HeaderComponent = () => {
                 AI NFTracker
             </Link>
 
-            {location.pathname === "/" &&
+            {isLandingPagePathname &&
                 navConfig.map(item =>
                     <HeaderLinkUI
                         path={item.path}
@@ -32,13 +34,16 @@ const HeaderComponent = () => {
                 )
             }
 
-            {location.pathname === "/" &&
-                <ButtonUI
-                    textValue="APP"
-                    className="header"
-                    color="primary"
-                />
+            {isLandingPagePathname &&
+                <Link to="/api/trends">
+                    <ButtonUI
+                        textValue="APP"
+                        className="header"
+                        color="primary"
+                    />
+                </Link>
             }
+
             <ButtonUI
                 textValue="Connect wallet"
                 className="header"

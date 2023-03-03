@@ -8,8 +8,8 @@ import { Autoplay } from "swiper";
 
 import { watchListData } from "../data/watchListData";
 
-import TableCatImage from "../../../assets/images/TableCat-Image.png";
-import { ReactComponent as ArrowIcon } from "../../../assets/icons/Arrow-Icon.svg";
+import TableCatImage from "../../../assets/images/TableCatImage.png";
+import { ReactComponent as ArrowIcon } from "../../../assets/icons/ArrowIcon.svg";
 
 const WatchListModuleSwiper = () => {
     return (

@@ -6,6 +6,7 @@
 .header {
     @extend %flex-row;
     @extend %flex-center;
+    justify-content: space-between;
     gap: $fs-xsmall;
 
     &__title {
@@ -28,6 +29,10 @@
 
     &__button {
         font-size: calc(#{$fs-regular} * 1);
+    }
+
+    &--width {
+        width: $content-width;
     }
 }
 

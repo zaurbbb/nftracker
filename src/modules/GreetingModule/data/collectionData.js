@@ -1,6 +1,6 @@
-import NFTCard1Image from "../../../assets/images/NFTCard1-Image.png";
-import NFTCard2Image from "../../../assets/images/NFTCard2-Image.png";
-import NFTCard3Image from "../../../assets/images/NFTCard3-Image.png";
+import NFTCard1Image from "../../../assets/images/NFTCard1Image.png";
+import NFTCard2Image from "../../../assets/images/NFTCard2Image.png";
+import NFTCard3Image from "../../../assets/images/NFTCard3Image.png";
 
 export const collectionData = [
     {

@@ -1,6 +1,6 @@
-import { ReactComponent as BoxIcon } from "../../../../assets/icons/Box-Icon.svg";
-import { ReactComponent as ProgressIcon } from "../../../../assets/icons/Progress-Icon.svg";
-import { ReactComponent as RefreshIcon } from "../../../../assets/icons/Refresh-Icon.svg";
+import { ReactComponent as BoxIcon } from "../../../../assets/icons/BoxIcon.svg";
+import { ReactComponent as ProgressIcon } from "../../../../assets/icons/ProgressIcon.svg";
+import { ReactComponent as RefreshIcon } from "../../../../assets/icons/RefreshIcon.svg";
 
 export const collapseTabsData = [
     {

@@ -1,6 +1,6 @@
-import AnimeGirlImage from "../../../assets/images/AnimeGirl-Image.png";
-import AnimeCatImage from "../../../assets/images/AnimeCat-Image.png";
-import AnimBearImage from "../../../assets/images/AnimeBear-Image.png";
+import AnimeGirlImage from "../../../assets/images/AnimeGirlImage.png";
+import AnimeCatImage from "../../../assets/images/AnimeCatImage.png";
+import AnimBearImage from "../../../assets/images/AnimeBearImage.png";
 
 export const watchListData = [
     {

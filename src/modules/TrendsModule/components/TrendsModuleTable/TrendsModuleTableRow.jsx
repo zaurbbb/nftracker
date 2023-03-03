@@ -1,7 +1,7 @@
 import React from "react";
 
-import TableMonkeyImage from "../../../../assets/images/TableMonkey-Image.png";
-import TableCatImage from "../../../../assets/images/TableCat-Image.png";
+import TableMonkeyImage from "../../../../assets/images/TableMonkeyImage.png";
+import TableCatImage from "../../../../assets/images/TableCatImage.png";
 
 const TrendsModuleTableRow = ({type}) => {
     function setTableImg () {
@@ -27,7 +27,7 @@ const TrendsModuleTableRow = ({type}) => {
     }
     return (
         <div className="table__row">
-            <div className="table__item">
+            <div className="table__item table__item--content-start">
                 <img
                     className="table__img"
                     src={setTableImg()}

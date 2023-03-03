@@ -9,14 +9,14 @@ import { ApiServiceModule } from "../modules/ApiServiceModule";
 
 const LandingPage = () => {
     return (
-        <>
+        <main>
             <GreetingModule />
             <TrendsModule />
             <PortfolioModule />
             <WatchListModule />
             <MintsModule />
             <ApiServiceModule />
-        </>
+        </main>
     );
 };
 

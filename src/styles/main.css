@@ -15,11 +15,11 @@
   justify-content: center;
 }
 
-.button, .collapse-tabs, .heading__content, .heading, .header, .watch-list-card__user, .watch-list-card__row, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .greeting, .table--mints-live .table__sub-item, .table__row, .table__item, .api-service__content, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, .portfolio, .trends, .watch-list, .mints, main {
-  display: flex;
+.button, .sidebar__item, .collapse-tabs, .heading__content, .heading, .header, .watch-list-card__user, .watch-list-card__row, .chart-data-item, .chart-values--horizontal, .chart--line, .win-rate__item, .portfolio__card--horizontal, .portfolio__statistics, .greeting__swiper, .greeting__statistics, .greeting, .table--mints-live .table__sub-item, .table__row, .table__item, .sidebar__nav, .sidebar, .api-service__content, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, section, main, .app {
+  display: flex !important;
 }
 
-.api-service__content, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, .portfolio, .trends, .watch-list, .mints, main {
+.sidebar__nav, .sidebar, .api-service__content, .watch-list-card__content, .watch-list-card, .chart-data, .chart-values--vertical, .win-rate, .portfolio__card--content-bottom, .portfolio__card--vertical, .greeting__about-us, .greeting__content, .table--mints-live .table__row:not(:first-child) .table__item, .table--portfolio-balances .table__item, .table, section, main, .app {
   flex-direction: column;
 }
 
@@ -35,6 +35,15 @@ html ::-webkit-scrollbar-thumb {
 }
 html ::-webkit-scrollbar-thumb:hover {
   background-color: #061d41;
+}
+
+.app--api-page main ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+.app--api-page main ::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 /**
@@ -179,15 +188,20 @@ code {
 }
 
 body {
-  height: 200vh;
+  overflow-x: hidden;
   font-size: 1.8rem;
   font-family: "NeueMachinaRegular", sans-serif;
 }
 
 .app {
-  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
   width: 100%;
-  background: url("../../assets/images/AppBg-Image.png") center/cover no-repeat;
+  min-height: 100vh;
+  background-image: url("../../assets/images/AppBgImage.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 a {
@@ -201,6 +215,7 @@ main {
 }
 
 section {
+  gap: 1.8rem;
   width: 78%;
 }
 
@@ -215,10 +230,6 @@ section {
 }
 .text--bold {
   font-weight: 600;
-}
-
-.portfolio, .trends, .watch-list, .mints {
-  gap: 1.8rem;
 }
 
 /**
@@ -250,6 +261,7 @@ section {
 }
 .table__item:first-child {
   padding-left: 0.6rem;
+  text-align: left;
 }
 .table__item:nth-child(2) {
   text-align: center;
@@ -273,6 +285,7 @@ section {
 }
 .table--trends .table__item:nth-child(1) {
   width: 40%;
+  text-align: left;
 }
 .table--trends .table__item:nth-child(2) {
   width: 20%;
@@ -616,6 +629,7 @@ section {
 * @requires     variables, placeholders
 */
 .header {
+  justify-content: space-between;
   gap: 1.2rem;
 }
 .header__title {
@@ -633,6 +647,9 @@ section {
 }
 .header__button {
   font-size: calc(1.8rem * 1);
+}
+.header--width {
+  width: 78%;
 }
 
 /**
@@ -653,8 +670,6 @@ section {
   color: #D5FF40;
 }
 .heading__title--small {
-  margin-top: 1.8rem;
-  margin-left: 1.2rem;
   font-family: "NeueMachinaRegular", sans-serif;
   font-size: 2.4rem;
   color: #ffffff;
@@ -677,6 +692,50 @@ section {
 .collapse-tabs {
   gap: 3.2rem;
   margin-top: 3.8rem;
+}
+
+/**
+* @desc         heading component styles.
+* @requires     variables, placeholders
+*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  height: 100%;
+  width: 10%;
+  padding: 10rem 0 4.8rem;
+  border-radius: 0 25px 25px 0;
+  background: #1C1D1F;
+}
+.sidebar__nav {
+  gap: 4.8rem;
+  width: 100%;
+}
+.sidebar__item {
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1.2rem 3.2rem;
+}
+.sidebar__item--active {
+  border-radius: 0 25px 25px 0;
+  background-color: rgba(213, 255, 64, 0.3);
+  color: #1C1D1F;
+}
+
+/**
+* @desc         api page styles.
+* @requires     variables, placeholders
+*/
+.app--api-page {
+  padding: 3.2rem 0;
+}
+.app--api-page main {
+  margin-right: -10%;
 }
 
 /**

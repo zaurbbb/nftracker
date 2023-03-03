@@ -2,7 +2,7 @@ import React from "react";
 
 import HeadingComponent from "../../../../components/HeadingComponent";
 
-import BarChartImg from "../../../../assets/images/BarChart-Image.png";
+import BarChartImg from "../../../../assets/images/BarChartImage.png";
 
 const PortfolioModuleStatisticsDistribution = () => {
     return (

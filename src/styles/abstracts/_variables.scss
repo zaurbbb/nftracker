@@ -83,6 +83,7 @@ $border-radius-small: 15px;
 $border-radius-regular: 25px;
 $border-radius-large: 35px;
 $border-radius-circle: 100%;
+$border-radius-sidebar: 0 $border-radius-regular $border-radius-regular 0;
 
 // [action - variables]
 // hover
@@ -105,6 +106,7 @@ $button-square-padding: $fs-xxsmall $fs-xsmall;
 $layout-padding: $fs-large $fs-massive;
 $table-padding: $fs-regular 0;
 $card-padding: $fs-regular $fs-small;
+$sidebar-padding: 10rem 0 $fs-giant;
 
 // [width and height - variables]
 // width
@@ -112,6 +114,7 @@ $content-width: 78%;
 $table-item-basic-width: 50%;
 $table-item-long-width: 100%;
 $card-height: 30rem;
+$sidebar-width: 10%;
 
 
 // [shadow - variables]

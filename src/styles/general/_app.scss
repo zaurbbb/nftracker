@@ -18,18 +18,23 @@ html {
 }
 
 body {
-    height: 200vh;
-
+    overflow-x: hidden;
     font-size: $fs-regular;
     font-family: $ff-regular;
 }
 
 .app {
-    display: flex;
+    @extend %flex-column;
+    align-items: center;
+    justify-content: space-between;
+    gap: $fs-large;
 
     width: 100%;
+    min-height: 100vh;
 
-    background: url("../../assets/images/AppBg-Image.png") center/cover no-repeat;
+    background-image: url("../../assets/images/AppBgImage.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 a {
@@ -47,6 +52,9 @@ main {
 }
 
 section {
+    @extend %flex-column;
+    gap: $fs-regular;
+
     width: $content-width;
 }
 
@@ -68,7 +76,6 @@ section {
     }
 }
 
-.portfolio, .trends, .watch-list, .mints {
-    @extend %flex-column;
-    gap: $fs-regular;
+.portfolio, .trends, .watch-list, .mints, .api-service {
+
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 import HeadingComponent from "../../../../components/HeadingComponent";
 
-import TableCatImage from "../../../../assets/images/TableCat-Image.png";
+import TableCatImage from "../../../../assets/images/TableCatImage.png";
 
 const PortfolioModuleCollapseCollection = () => {
     return (
@@ -19,8 +19,11 @@ const PortfolioModuleCollapseCollection = () => {
                     <div className="table__item">Floor</div>
                     <div className="table__item">Value</div>
                 </div>
-                {[0, 0, 0, 0].map(() =>
-                    <div className="table__row">
+                {[0, 1, 2, 3].map(item =>
+                    <div
+                        className="table__row"
+                        key={item}
+                    >
                         <div className="table__item">
                             <img
                                 className="table__img"

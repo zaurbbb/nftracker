@@ -81,7 +81,7 @@ I decided to use something like 7-1 pattern, but transformed it to use for the S
 Also, I use BEM methodology for naming classes.
 
 So, I have my own rules about the writing order of the styles:
-0) @include / @extend
+
 1) position / transform / z-index
 2) display (flex / grid)  / overflow / object-fit
 3) width / height / margin / padding

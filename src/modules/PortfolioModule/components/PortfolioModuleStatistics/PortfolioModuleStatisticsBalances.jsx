@@ -2,10 +2,10 @@ import React from "react";
 
 import HeadingComponent from "../../../../components/HeadingComponent";
 
-import { ReactComponent as USDCIcon } from "../../../../assets/icons/USDC-Icon.svg";
-import { ReactComponent as USDTIcon } from "../../../../assets/icons/USDT-Icon.svg";
-import { ReactComponent as ETHIcon } from "../../../../assets/icons/ETH-Icon.svg";
-import { ReactComponent as WETHIcon } from "../../../../assets/icons/WETH-Icon.svg";
+import { ReactComponent as USDCIcon } from "../../../../assets/icons/USDCIcon.svg";
+import { ReactComponent as USDTIcon } from "../../../../assets/icons/USDTIcon.svg";
+import { ReactComponent as ETHIcon } from "../../../../assets/icons/ETHIcon.svg";
+import { ReactComponent as WETHIcon } from "../../../../assets/icons/WETHIcon.svg";
 const PortfolioModuleStatisticsBalances = () => {
     return (
         <div className="portfolio__balances">

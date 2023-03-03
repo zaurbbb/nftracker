@@ -1,12 +1,12 @@
 import React from "react";
 
-import TableCatImage from "../../../assets/images/TableCat-Image.png";
-import { ReactComponent as GreenCircleIcon } from "../../../assets/icons/GreenCircle-Icon.svg";
-import { ReactComponent as CrystalLightIcon } from "../../../assets/icons/CrystalLight-Icon.svg";
-import { ReactComponent as LightningLightIcon } from "../../../assets/icons/LightningLight-Icon.svg";
-import { ReactComponent as EllipseIcon } from "../../../assets/icons/Ellipse-Icon.svg";
-import { ReactComponent as UserIcon } from "../../../assets/icons/User-Icon.svg";
-import { ReactComponent as GasIcon } from "../../../assets/icons/Gas-Icon.svg";
+import TableCatImage from "../../../assets/images/TableCatImage.png";
+import { ReactComponent as GreenCircleIcon } from "../../../assets/icons/GreenCircleIcon.svg";
+import { ReactComponent as CrystalLightIcon } from "../../../assets/icons/CrystalLightIcon.svg";
+import { ReactComponent as LightningLightIcon } from "../../../assets/icons/LightningLightIcon.svg";
+import { ReactComponent as EllipseIcon } from "../../../assets/icons/EllipseIcon.svg";
+import { ReactComponent as UserIcon } from "../../../assets/icons/UserIcon.svg";
+import { ReactComponent as GasIcon } from "../../../assets/icons/GasIcon.svg";
 
 const MintsModuleLive = () => {
     return (
@@ -19,8 +19,11 @@ const MintsModuleLive = () => {
                     </span>
                 </div>
             </div>
-            {[0, 0, 0, 0].map(() =>
-                <div className="table__row">
+            {[0, 1, 2, 3].map(item =>
+                <div
+                    className="table__row"
+                    key={item}
+                >
                     <div className="table__item table__item--content-start">
                         <img
                             className="table__img"

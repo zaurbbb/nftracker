@@ -2,7 +2,7 @@ import React from "react";
 
 import HeadingComponent from "../../../components/HeadingComponent";
 
-import ApiServiceImage from "../../../assets/images/ApiService-Image.png";
+import ApiServiceImage from "../../../assets/images/ApiServiceImage.png";
 
 const ApiServiceModuleContent = () => {
     return (

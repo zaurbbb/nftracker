@@ -1,8 +1,8 @@
-import { ReactComponent as LightningSecondaryIcon } from "../assets/icons/LightningSecondary-Icon.svg";
-import { ReactComponent as PortfolioIcon } from "../assets/icons/Portfolio-Icon.svg";
-import { ReactComponent as CompassIcon } from "../assets/icons/Compass-Icon.svg";
-import { ReactComponent as TargetIcon } from "../assets/icons/Target-Icon.svg";
-import { ReactComponent as SpaceshipIcon } from "../assets/icons/Spaceship-Icon.svg";
+import { ReactComponent as LightningSecondaryIcon } from "../assets/icons/LightningSecondaryIcon.svg";
+import { ReactComponent as PortfolioIcon } from "../assets/icons/PortfolioSecondaryIcon.svg";
+import { ReactComponent as CompassIcon } from "../assets/icons/CompassSecondaryIcon.svg";
+import { ReactComponent as TargetIcon } from "../assets/icons/TargetSecondaryIcon.svg";
+import { ReactComponent as SpaceshipIcon } from "../assets/icons/SpaceshipSecondaryIcon.svg";
 
 const navConfig = [
     {

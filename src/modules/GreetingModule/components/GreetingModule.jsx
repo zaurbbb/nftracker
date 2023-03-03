@@ -6,7 +6,7 @@ import GreetingModuleStatistics from "./GreetingModuleStatistics";
 import GreetingModuleCollection from "./GreetingModuleCollection";
 
 import video from "../../../assets/videos/Greeting-Video.mp4"
-import LogosGroupImage from "../../../assets/images/LogosGroup-Image.png";
+import LogosGroupImage from "../../../assets/images/LogosGroupImage.png";
 
 const GreetingModule = () => {
     return (

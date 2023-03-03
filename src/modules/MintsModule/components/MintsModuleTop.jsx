@@ -1,9 +1,9 @@
 import React from "react";
 
-import TableCatImage from "../../../assets/images/TableCat-Image.png";
-import { ReactComponent as GreenCircleIcon } from "../../../assets/icons/GreenCircle-Icon.svg";
-import { ReactComponent as CrystalSecondaryIcon } from "../../../assets/icons/CrystalSecondary-Icon.svg";
-import { ReactComponent as EllipseIcon } from "../../../assets/icons/Ellipse-Icon.svg";
+import TableCatImage from "../../../assets/images/TableCatImage.png";
+import { ReactComponent as GreenCircleIcon } from "../../../assets/icons/GreenCircleIcon.svg";
+import { ReactComponent as CrystalSecondaryIcon } from "../../../assets/icons/CrystalSecondaryIcon.svg";
+import { ReactComponent as EllipseIcon } from "../../../assets/icons/EllipseIcon.svg";
 
 const MintsModuleTop = () => {
     return (
@@ -22,8 +22,11 @@ const MintsModuleTop = () => {
                 <div className="table__item text text--secondary"><CrystalSecondaryIcon /> Price</div>
                 <div className="table__item text text--secondary">Mints</div>
             </div>
-            {[0, 0, 0, 0, 0, 0, 0].map(() =>
-                <div className="table__row">
+            {[0, 1, 2, 3, 4, 5, 6].map(item =>
+                <div
+                    className="table__row"
+                    key={item}
+                >
                     <div className="table__item">
                         <img
                             className="table__img"

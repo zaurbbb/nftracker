@@ -1,0 +1,47 @@
+/**
+* @desc         heading component styles.
+* @requires     variables, placeholders
+*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    @extend %flex-column;
+    //@extend %flex-center;
+    align-items: center;
+    justify-content: space-between;
+    gap: $fs-xsmall;
+
+    height: 100%;
+    width: $sidebar-width;
+    padding: $sidebar-padding;
+
+    border-radius: $border-radius-sidebar;
+
+    background: $muted-color;
+
+    &__nav {
+        @extend %flex-column;
+        gap: $fs-giant;
+
+        width: 100%;
+    }
+
+    &__item {
+        @extend %flex-row;
+        justify-content: flex-end;
+
+        width: 100%;
+        padding: $fs-xsmall $fs-large;
+        &--active {
+            border-radius: $border-radius-sidebar;
+
+            background-color: rgba($primary-color, .3);
+
+            color: $muted-color;
+        }
+    }
+}

@@ -8,7 +8,7 @@ import PortfolioModuleCollapse from "./PortfolioModuleCollapse/PortfolioModuleCo
 import PortfolioModuleStatistics from "./PortfolioModuleStatistics/PortfolioModuleStatistics";
 import CollapseTabsComponent from "../../../components/CollapseTabsComponent";
 
-import { ReactComponent as CashMoneyIcon } from "../../../assets/icons/CashMoney-Icon.svg";
+import { ReactComponent as CashMoneyIcon } from "../../../assets/icons/CashMoneyIcon.svg";
 
 const PortfolioModule = () => {
     return (
