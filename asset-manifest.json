@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nftracker/static/css/main.78c09d69.css",
+    "main.css": "/nftracker/static/css/main.2de90980.css",
     "main.js": "/nftracker/static/js/main.dc37cef6.js",
     "static/media/Greeting-Video.mp4": "/nftracker/static/media/Greeting-Video.aaeb7c96e8caaf9184d9.mp4",
     "static/media/AppBgImage.png": "/nftracker/static/media/AppBgImage.292ac6f9fbd5636ff23f.png",
@@ -46,11 +46,11 @@
     "static/media/GetBackArrowIcon.svg": "/nftracker/static/media/GetBackArrowIcon.9c47a494577da5fbc422e9b7dd01bd00.svg",
     "static/media/ArrowIcon.svg": "/nftracker/static/media/ArrowIcon.58112bb6a1d5569660bcc18dea0f812c.svg",
     "static/media/GreenCircleIcon.svg": "/nftracker/static/media/GreenCircleIcon.927903f84bca26fb2daa3fce50d0429a.svg",
-    "main.78c09d69.css.map": "/nftracker/static/css/main.78c09d69.css.map",
+    "main.2de90980.css.map": "/nftracker/static/css/main.2de90980.css.map",
     "main.dc37cef6.js.map": "/nftracker/static/js/main.dc37cef6.js.map"
   },
   "entrypoints": [
-    "static/css/main.78c09d69.css",
+    "static/css/main.2de90980.css",
     "static/js/main.dc37cef6.js"
   ]
 }
