@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nftracker/static/css/main.4cb87145.css",
-    "main.js": "/nftracker/static/js/main.de1c8151.js",
+    "main.css": "/nftracker/static/css/main.e2982a0b.css",
+    "main.js": "/nftracker/static/js/main.95cc6879.js",
     "static/media/Greeting-Video.mp4": "/nftracker/static/media/Greeting-Video.aaeb7c96e8caaf9184d9.mp4",
     "static/media/AppBg-Image.png": "/nftracker/static/media/AppBg-Image.292ac6f9fbd5636ff23f.png",
     "static/media/LogosGroup-Image.png": "/nftracker/static/media/LogosGroup-Image.a54deba00d2899a85f64.png",
@@ -41,11 +41,11 @@
     "static/media/Progress-Icon.svg": "/nftracker/static/media/Progress-Icon.7bea8f8614e1c875c7ade1083e49769e.svg",
     "static/media/Arrow-Icon.svg": "/nftracker/static/media/Arrow-Icon.58112bb6a1d5569660bcc18dea0f812c.svg",
     "static/media/GreenCircle-Icon.svg": "/nftracker/static/media/GreenCircle-Icon.927903f84bca26fb2daa3fce50d0429a.svg",
-    "main.4cb87145.css.map": "/nftracker/static/css/main.4cb87145.css.map",
-    "main.de1c8151.js.map": "/nftracker/static/js/main.de1c8151.js.map"
+    "main.e2982a0b.css.map": "/nftracker/static/css/main.e2982a0b.css.map",
+    "main.95cc6879.js.map": "/nftracker/static/js/main.95cc6879.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cb87145.css",
-    "static/js/main.de1c8151.js"
+    "static/css/main.e2982a0b.css",
+    "static/js/main.95cc6879.js"
   ]
 }
