@@ -15,6 +15,7 @@ Live demo: ```null```
 
 - BEM methodology
 - Simple Modular Architecture
+- Swiper for sliders
 
 ## Getting Started
 
